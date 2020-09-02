@@ -61,7 +61,6 @@ a.lib-search__info i.fa-info {
 
 input.lib-search__input {
   position: relative;
-  -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   width: 1%;
   margin-bottom: 0;
@@ -71,6 +70,8 @@ input.lib-search__input {
   border-radius: 0;
   font-size: 1rem;
   height: auto;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 input.lib-search__input:hover,
@@ -98,6 +99,8 @@ input.lib-search__input:focus {
   border-radius: 0;
   color: #ffffff;
   background-color: #112e51;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 .lib-search__button:hover,
