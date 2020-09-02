@@ -22,7 +22,9 @@ import './legacy/css/components/UTC-custom-blocks/_utc-button-group.css';
 import './legacy/css/ckeditor/accordion.css';
 import './legacy/css/components/UTC-custom-blocks/_utc_employee.css';
 import './legacy/css/components/card/_card.css';
-import './legacy/css/components/UTC-custom-blocks/_utclib-item-card.css';
+import './legacy/css/components/UTC-custom-blocks/_utclib_item_card.css';
+import './legacy/css/components/UTC-custom-blocks/_utclib_primo_search.css';
+import './legacy/css/components/UTC-custom-blocks/_utclib_help_btn.css';
 
 // import "./legacy/css/components/UTC-custom-blocks/";
 // import "./legacy/css/components/field/";
