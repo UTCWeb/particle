@@ -106323,6 +106323,8 @@ a.lib-search__info {
   float: right;
   color: #fdb736;
   border-bottom: 0px;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 a.lib-search__info:hover,
@@ -106348,10 +106350,19 @@ a.lib-search__info i.fa-info {
 }
 
 .lib-search__input-container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  width: 100%;
   margin-bottom: 1rem;
 }
 
 input.lib-search__input {
+  position: relative;
+  flex: 1 1 auto;
+  width: 1%;
+  margin-bottom: 0;
   color: #000000;
   background-color: #f5f5f5;
   border: 2px solid #112e51;
@@ -106369,6 +106380,7 @@ input.lib-search__input:focus {
 }
 
 .lib-search__button-container {
+  display: flex;
   margin-left: 0px;
 }
 
