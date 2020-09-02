@@ -21,8 +21,8 @@ import "./legacy/css/components/UTC-custom-blocks/_utc_blockquotes.css";
 import "./legacy/css/components/UTC-custom-blocks/_utc-button-group.css";
 import "./legacy/css/ckeditor/accordion.css";
 import "./legacy/css/components/UTC-custom-blocks/_utc_employee.css";
-// import "./legacy/css/components/card/_card.css";
-// import "./legacy/css/components/UTC-custom-blocks/_utclib-item-card.css";
+import "./legacy/css/components/card/_card.css";
+import "./legacy/css/components/UTC-custom-blocks/_utclib-item-card.css";
 
 // import "./legacy/css/components/UTC-custom-blocks/";
 // import "./legacy/css/components/field/";
