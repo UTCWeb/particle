@@ -32,12 +32,11 @@
 
 
   {% set card_heading = content.field_sidebar_card_heading|field_value %}
-  {% set card_heading_color = content.field_sidebar_card_heading_color|field_value|render %}
+  {% set card_heading_color = content.field_sidebar_card_header_color|field_value|render %}
   {% set card_text = content.field_sidebar_card_body|field_value %}
 
 {% set card_classes = [
-  'utc-card-2',
-  'utc-card-2--sidebar',
+  'utc-sidebar-card',
 ] | sort | join(' ') | trim %}
 
 
@@ -47,13 +46,13 @@
 {% block content %}
 <div class="{{ card_classes }}">
   {% if card_heading %}
-    <h3 class="utc-card-2__header {{ card_heading_color }}">
+    <h3 class="utc-sidebar-card__header utc-sidebar-card--{{ card_heading_color }}">
       {{ card_heading }}
     </h3>
   {% endif %}
-    <div class="utc-card-2__body">
+    <div class="utc-sidebar-card__body">
       {% if card_text %}
-        <div class="utc-card-2__text">{{ card_text }}</div>
+        <div class="utc-sidebar-card__text">{{ card_text }}</div>
       {% endif %}
     </div>
 </div>
