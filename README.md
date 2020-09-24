@@ -1,28 +1,55 @@
 
-# UTCWEB Particle: A design system integrating to Pattern Lab and a Drupal 8 theme
+# UTCWeb's Particle
+## UTC Developer Cheat Sheet
+### Warning
+1. The module and the submodule both have a master and develop branch.
+1. If working on the git submodule don't update utccloud parent repo until you have commited changes. (data can be lost if you update utccloud while working on particle subtheme.
+1. Only commit the changes on the parent git repo when you want utccloud to refer to the latest revision of the particle repo. In other words, it should be done once per PR to the main repo.
 
-CheatSheet
-
-**Warning**
-1.  the module and the submodule both have a master and develop branch.
-1.  if working on the git submodule don't update utccloud parent repo until you have commited changes. (data can be lost if you update utccloud while working on particle subtheme.
-1.  Only commit the changes on the parent git repo when you want utccloud to refer to the latest revision of the particle repo. In other words, it should be done once per PR to the main repo.
-
-
-**Setup**
-1.  git submodule update --init --recursive -> the first time the submodule is added to your repo (on MacOS, linux handles this fine).
-1.  git submodule update --recursive -> after is beeing added once.
-1.  composer install and npm install -> if blt setup and sync have not been used.
+### Setup
+1. `git submodule update --init --recursive` -> the first time the submodule is added to your repo (on MacOS, linux handles this fine).
+1. `git submodule update --recursive` -> after is beeing added once.
+1. `composer install` and `npm install` -> if blt setup and sync have not been used.
 
 
-**Things to remember**
+### Things to remember
 
-1.  gulp -> npm run dev:drupal
-1.  npm start -> starts the living stylesheet
-1.  ads run drush cr -> might be needed from time to time.
+1. gulp -> `npm run dev:drupal`
+1. `npm start` -> starts the living stylesheet
+1. `ads run drush cr` -> might be needed from time to time.
 
+Other npm commands can be found in package.json.
+```json
+    "start": "npm run dev:pl",
+    "pl": "node ./apps/pl-default/pl-app.js",
+    "setup": "patternlab install --config ./apps/pl-default/patternlab-config.json && patternlab build --config ./apps/pl-default/patternlab-config.json",
+    "export:pl": "patternlab export --config ./apps/pl-default/patternlab-config.json",
+    "dev:pl": "cross-env-shell NODE_ENV=development \"npm run pl & webpack-dev-server --config ./apps/pl-default/webpack.config.js --hot\"",
+    "build:pl": "cross-env-shell NODE_ENV=production \"npm run pl && webpack --config ./apps/pl-default/webpack.config.js\"",
+    "dev:drupal": "cross-env-shell NODE_ENV=development \"webpack --watch --config ./apps/drupal-default/webpack.config.js\"",
+    "build:drupal": "cross-env-shell NODE_ENV=production \"webpack --hide-modules --config ./apps/drupal-default/webpack.config.js\"",
+    "lint:js": "eslint --ext .js,.vue ./",
+    "lint:css": "stylelint '**/*.css'",
+    "lint": "npm run lint:js; npm run lint:css;",
+    "fmt:js": "npm run lint:js -- --fix",
+    "fmt:css": "npm run lint:css -- --fix && prettier --write '**/*.css'",
+    "fmt:svg": "svgo -f ./source/default/_patterns/01-atoms/svg/icons --config=./.svgo.yml",
+    "fmt": "npm run fmt:svg; npm run fmt:js; npm run fmt:css; prettier --write .",
+    "test:backstop:ref": "node tools/tests/vrt/backstop-example-reference.js",
+    "test:backstop:test": "node tools/tests/vrt/backstop-example-test.js",
+    "test:pa11y": "pa11y-ci --config tools/tests/accessibility/pa11y.js",
+    "test:unit:default": "NODE_ENV=test jest --projects source/default/",
+    "test:unit": "npm run test:unit:default",
+    "test:tools:generators": "NODE_ENV=test jest --projects tools/generators/",
+    "test": "npm run test:unit",
+    "ci": "npm run lint && npm run test && npm run build:pl && npm run build:drupal",
+    "new": "yo new-component",
+    "postinstall": "cd tools/generators/new-component && npm link"
+```
 
-# Particle: A design system integrating to Pattern Lab and a Drupal 8 theme
+---
+
+## Particle: A design system integrating to Pattern Lab and a Drupal 8 theme
 
 [![GitHub (pre-)release](https://img.shields.io/github/release/phase2/particle/all.svg)](https://github.com/phase2/particle/releases)
 [![Build Status](https://travis-ci.org/phase2/particle.svg?branch=master)](https://travis-ci.org/phase2/particle)
