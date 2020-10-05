@@ -25,7 +25,7 @@
  * @see template_preprocess_block()
  */
 #}
-{{ attach_library('themag_st/utc-lib-chat') }}
+{% set video_alignment_val = content["#block_content"].field_video_alignment.0.value %}
 
 <div{{attributes}}>
 	{{ title_prefix }}
@@ -36,10 +36,34 @@
 	{% endif %}
 	{{ title_suffix }}
 	{% block content %}
-    <!-- Place this div in your web page where you want your chat widget to appear. -->
-    <div id="utc-library-chat-widget">
-      <div class="needs-js">chat loading...</div>
-    </div>
+		<div class="container">
+			{% if video_alignment_val  == 'center' %}
+				<div style="display:grid; justify-content: center;">
+						<div {{content_attributes}}>{{ content.field_utc_video}}
+						</div>
+				</div>
+			{% elseif video_alignment_val == 'left' %}
+				<div style="display:grid; justify-content: left;">
+						<div {{content_attributes}}>{{ content.field_utc_video}}
+					</div>
+				</div>
+			{% elseif video_alignment_val == 'right' %}
+				<div style="display:grid; justify-content: right;">
+						<div {{content_attributes}}>{{ content.field_utc_video}}
+					</div>
+				</div>
+			{# full screen and row do not work as expected yet #}
+			{% elseif video_alignment_val == 'full-screen' %}
+				<div style="display:grid; justify-content: center;">
+						<div {{content_attributes}}>{{ content.field_utc_video}}
+						</div>
+				</div>
+			{% else %}
+				<div class="display:grid; justify-content: center;">
+						<div {{content_attributes}}>{{ content.field_utc_video}}
+					</div>
+				</div>
+			{% endif %}
+		</div>
 	{% endblock %}
-
 </div>

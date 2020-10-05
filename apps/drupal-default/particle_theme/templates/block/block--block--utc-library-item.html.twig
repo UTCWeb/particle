@@ -1,3 +1,4 @@
+{% extends "block.html.twig" %}
 {#
 /**
  * @file
@@ -25,20 +26,24 @@
  * @see template_preprocess_block()
  */
 #}
-<div{{ attributes }}>
-  {{ title_prefix }}
-    {% if label %}
-      <h2{{ title_attributes }}>
-         <span class="title-text">{{ label }}</span>
-      </h2>
-    {% endif %}
-  {{ title_suffix }}
-  {% block content %}
-    <h2>Online Events</h2>
-    <div{{ content_attributes }}>
-      <div id="feedContainer" class="lib-c-feed-container lib-l-margin-top">
-        {{ content }}
-      </div>
-    </div>
-  {% endblock %}
-</div>
+{% block content %}
+
+	{% set card_classes = [
+  'utc-item-card',
+  'h-100',
+  card_link ? 'utc-item-card--card-link',
+] | sort | join(' ') | trim %}
+
+	{% set content = {
+	card_link: content.field_utclib_item_link.0['#url'],
+    card_image: content.field_utclib_item_image|field_value,
+    card_title: content.field_utclib_item_title|field_value,
+    card_text: content.field_utclib_item_body|field_value,  
+    card_badges: content.field_utclib_item_badges|field_value, 
+    card_add_info: content.field_utclib_item_add_info|field_value, 
+    card_divider: content.field_utclib_item_divider|field_value,
+ } %}
+
+{% include 'block--utc-library-item-base.html.twig' with content %}
+
+{% endblock %}
