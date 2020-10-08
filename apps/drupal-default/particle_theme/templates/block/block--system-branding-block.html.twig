@@ -13,10 +13,11 @@
  * - site_slogan: Slogan for site as defined in Site information settings.
  */
 #}
+
 {% block content %}
   {% if site_logo %}
-    <a href="https://www.utc.edu/" rel="home" class="site-logo">
-      <img src="{{ site_logo }}" alt="{{ 'Home'|t }}" />
+    <a href="https://www.utc.edu/" rel="home" class="site-logo block mx-auto w-3/6">
+      <img class="mx-auto min-w-full" src="{{ site_logo }}" alt="{{ 'Home'|t }}" />
     </a>
   {% endif %}
   {% if site_name %}
@@ -28,3 +29,4 @@
     <div class="site-slogan">{{ site_slogan }}</div>
   {% endif %}
 {% endblock %}
+
