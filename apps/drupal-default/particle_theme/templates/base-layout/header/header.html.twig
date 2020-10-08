@@ -1,4 +1,7 @@
 <header>
-  {{ page.global_header }}
-  {{ page.utc_section_menu }}
+  <div class="flex flex-row">
+    <div class="px-6 py-3 m-3">{{ page.global_header.sitebranding_particle }}</div>
+    <div class="px-6 py-3 m-3">{{ page.global_header.utcsecondarymenu_particle }}</div>
+    <div class="px-6 py-3 m-3">{{ page.global_header.searchform_particle }}</div>
+  </div>
 </header>
