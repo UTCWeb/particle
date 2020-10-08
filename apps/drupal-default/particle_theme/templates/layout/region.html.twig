@@ -14,13 +14,12 @@
 #}
 {%
   set classes = [
-    'region',
-    'region--' ~ region|clean_class,
-  ]
+  'region',
+  'region-' ~ region|clean_class,
+]
 %}
 {% if content %}
-  <header{{ attributes.addClass(classes) }}>
-    {{ utclibbrandbarmenu_2 }}
+  <div{{ attributes.addClass(classes) }}>
     {{ content }}
-  </header>
+  </div>
 {% endif %}
