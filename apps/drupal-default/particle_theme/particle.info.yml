@@ -9,7 +9,8 @@ libraries:
 libraries-override:
   core/jquery: particle/jquery
 regions:
-  search: 'Search'
+  global_header: 'Global Header'
+  utc_section_menu: 'UTC Section Menu'
   offcanvas_sidebar: 'Off-Canvas sidebar'
   content_administration: 'Tabs'
   content_header: 'Content Header'
