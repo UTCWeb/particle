@@ -14,14 +14,13 @@
   ]
 %}
 
-    <style>
-      @media only screen and (max-width: 1200px) {
-        .hide-under-1200 {
-          display: none;
-        }
-      }
-    </style> 
-
+<style>
+  @media only screen and (max-width: 1200px) {
+    .hide-under-1200 {
+      display: none;
+    }
+  }
+</style>
 
 <header class="header header--{{ themag.header_style|clean_class }}">
 
@@ -32,7 +31,7 @@
           {{ page.logo }}
         </div>
         <div class="header__main__right">
-          <div class"hide-under-1200">
+          <div{{ attributes.addClass(classes) }}>
             {% include '@themag/base-layout/header/components/social-media-pages-menu.html.twig' %}
           </div>
           {{ page.header_secondary_menu }}
