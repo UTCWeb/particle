@@ -4,6 +4,24 @@
  * Custom Header.
  */
 #}
+
+{%
+  set classes = [
+    'flex',
+    'justify-center',
+    'py-2',
+    'hide-under-1200',
+  ]
+%}
+
+<style>
+  @media only screen and (max-width: 1200px) {
+    .hide-under-1200 {
+      display: none;
+    }
+  }
+</style>
+
 <header class="header header--{{ themag.header_style|clean_class }}">
 
   <div class="header__container-wrapper--header__main js-sticky-header-element">
@@ -13,23 +31,21 @@
           {{ page.logo }}
         </div>
         <div class="header__main__right">
+          <div{{ attributes.addClass(classes) }}>
+            {% include '@themag/base-layout/header/components/social-media-pages-menu.html.twig' %}
+          </div>
           {{ page.header_secondary_menu }}
           {% include '@themag/base-layout/header/components/user-action-menu.html.twig' %}
         </div>
       </div>
     </div>
 
-      {{ page.search }}
+    {{ page.search }}
+    
 
-    <div class="header__container header__container--boxed">
-      <div class="header__main">
-        <div class="header__main__left">
-          {{ page.header_primary_menu }}
-        </div>
-        <div class="header__main__right">
-          {% include '@themag/base-layout/header/components/social-media-pages-menu.html.twig' %}
-        </div>
-      </div>
+    {# media query to hide since we are no longer using classes in line 19 #}
+    <div{{ attributes.addClass(classes) }}>
+      {{ page.header_primary_menu }}
     </div>
 
   </div>
