@@ -31,19 +31,17 @@
           {{ page.logo }}
         </div>
         <div class="header__main__right">
+          {{ page.header_secondary_menu }}
+          {% include '@themag/base-layout/header/components/user-action-menu.html.twig' %}
           <div{{ attributes.addClass(classes) }}>
             {% include '@themag/base-layout/header/components/social-media-pages-menu.html.twig' %}
           </div>
-          {{ page.header_secondary_menu }}
-          {% include '@themag/base-layout/header/components/user-action-menu.html.twig' %}
         </div>
       </div>
     </div>
 
     {{ page.search }}
     
-
-    {# media query to hide since we are no longer using classes in line 19 #}
     <div{{ attributes.addClass(classes) }}>
       {{ page.header_primary_menu }}
     </div>
