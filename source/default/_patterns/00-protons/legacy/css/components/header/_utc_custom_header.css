@@ -82,11 +82,28 @@
 }
 
 
-/*new code*/
+/*new superfish code*/
+
+ul.sf-menu ul li a {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-bottom: 1px solid #eceff1;
+}
+
+ul.sf-menu ul li a:hover,
+ul.sf-menu ul li a:active,
+ul.sf-menu ul li a:focus {
+    background-color: #f2f4f5;
+}
+
+
+/* end superfish code */
 
 @media screen and (max-width: 768px) {
     .block--system-branding-block img {
         width: 240px;
+    }
+    #superfish-secondary-menu a.menuparent {
+        pointer-events: none;
     }
 }
 
@@ -142,7 +159,7 @@
     }
 }
 
-@media screen and (max-width: 280px) {
+@media screen and (max-width: 320px) {
     .header__main {
         flex-wrap: wrap;
     }
