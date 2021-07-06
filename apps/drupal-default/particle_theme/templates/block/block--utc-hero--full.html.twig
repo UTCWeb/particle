@@ -18,7 +18,7 @@
 	{# hero_button_link: content.field_hero_button|field_value, #}
 	{% set hero_image_select = content["#block_content"].field_hero_bg_image.0.target_id %}
 	{% set utc_hero = {
-	hero_bg: drupal_field('field_image_url', 'taxonomy_term', hero_image_select)["#object"].field_image_url.value,
+	hero_bg: file_url(drupal_field('field_image_url', 'taxonomy_term', hero_image_select)["#object"].field_hero_image.entity.uri.value),
 	hero_align: content["#block_content"].field_hero_align.0.value,
 	hero_color: content["#block_content"].field_hero_color.0.value,
 	hero_tag: content.field_hero_tag|field_value,
@@ -93,6 +93,4 @@
 
 
 		</div>
-
-
 	{% endblock %}
