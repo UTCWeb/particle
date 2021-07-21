@@ -120,6 +120,20 @@
           ]
         },
         {
+          "id": "static",
+          "recursive": true,
+          "paths": [
+            "./source/default/static"
+          ]
+        },
+        {
+          "id": "lib",
+          "recursive": true,
+          "paths": [
+            "./source/default/lib"
+          ]
+        },
+        {
           "id": "protons",
           "recursive": true,
           "paths": [
