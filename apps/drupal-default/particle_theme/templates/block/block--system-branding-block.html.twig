@@ -23,5 +23,8 @@
     logo_svg_inline: logo_svg_inline,
     logo_img_src: logo_img_src
   } %}
-  {% include '@atoms/branding/_branding.twig' with logo %}
+  <h1>
+    {% include '@atoms/branding/_branding.twig' with logo %}<span class="sr-only">{{ site_name }}</span>
+  </h1>
 {% endblock content %}
+
