@@ -14,7 +14,6 @@
 
 <aside class="branding">
   <div class="branding__site-logo">
-    <h1>
       <a href="{{ url }}" title="{{ site_name }}" rel="home">
         {% if logo_svg_inline %}
           {% include '@atoms/svg/_svg.twig' with {
@@ -32,11 +31,8 @@
             }
           } %}
         {% endif %}
-        <span class="sr-only">{{ site_name }}</span>
       </a>
-    </h1>
   </div>
-
   {% if site_name %}
     <h1 class="text-3xl branding__site-name">
       <a href="{{ path('<front>') }}" title="{{ 'Home'|t }}" rel="home">{{ site_name }}</a>
