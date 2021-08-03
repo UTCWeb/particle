@@ -5,7 +5,7 @@ utchero_1:
     alt: 'Graybox placeholder image'
     style: 'card'
     placeholder: true
-  hero_title: 'Choose UTC flipped'
+  hero_title: 'Choose UTC'
   hero_text:
     'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus
     quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.'
