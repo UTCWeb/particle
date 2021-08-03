@@ -21,3 +21,20 @@ card_1:
     - '#photography'
     - '#travel'
     - '#winter'
+
+
+card_2:
+  image:
+    variant: 'primary'
+    src: ''
+    alt: 'Graybox placeholder image'
+    style: 'card'
+    placeholder: true
+  title: Card Title flipped
+  body:
+    'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus
+    quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.'
+  list:
+    - '#photography'
+    - '#travel'
+    - '#winter'
