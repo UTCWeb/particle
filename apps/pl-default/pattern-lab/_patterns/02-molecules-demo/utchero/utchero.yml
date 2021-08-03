@@ -1,0 +1,24 @@
+utchero_demo:
+  title: 'UTCHero'
+  content:
+    lead: 'Demonstration of our UTC Hero Component'
+    summary:
+      'Provide the classic hero component utilizing Tailwind component as default'
+
+utchero_1:
+  hero_image_select:
+    variant: 'primary'
+    src: ''
+    alt: 'Graybox placeholder image'
+    style: 'card'
+    placeholder: true
+  hero_title: 'Choose UTC'
+  hero_text:
+    'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus
+    quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.'
+  hero_button_text: 'Learn more'
+  hero_button_url: 'utc.edu'
+  hero_color: 'Dark Blue'
+  hero_align: ''
+  hero_image: 'https://via.placeholder.com/2000x2000.jpeg'
+  hero_tag: 'Admissions'

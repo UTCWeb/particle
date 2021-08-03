@@ -1,0 +1,82 @@
+{#
+/**
+ * @file
+ *   card
+ *
+ * Available variables for card:
+ *  - card.variant [string]: When set, adds variant styling and behavior.
+ *  - card.image [array]: Implements @atoms/image/_image.twig.
+ *  - card.title [string]: The title of the card.
+ *  - card.body [string]: The body content of the card.
+ *  - card.list [array]: A list of terms describing card content.
+ */
+#}
+
+{# Sets colors for hero content depending on selection #}
+	{% if utchero.hero_color == 'Dark Blue' %}
+		{% set title_color = 'lg:text-white' %}
+		{% set body_color = 'lg:text-white' %}
+		{% set btn_border_color = "lg:border-white" %}
+		{% set bg_color = 'background-color:#112e51' %}
+		{% set bg1_opacity = '' %}
+    	{% set bg2_opacity = 'opacity-90' %}
+	{% else %}
+		{% set title_color = 'text-utc-new-blue-500' %}
+		{% set body_color = 'text-base' %}
+		{% set btn_border_color = "lg:border-utc-new-blue-500" %}
+		{% set bg_color = 'background-color:#104dd4' %}
+		{% set bg1_opacity = 'opacity-20' %}
+    {% set bg2_opacity = 'opacity-20' %}
+	{% endif %}
+
+<div class="{{ card_classes }}">
+	{% block utchero_content %}
+		<div class="lg:grid lg:grid-rows-utchero lg:grid-cols-utcheroright lg:gap-y-6 grid-flow-row lg:mb-4 text-center">
+			{# {% if utc_hero.hero_image %} #}
+				<div class="lg:col-start-3 lg:col-end-4 lg:row-start-2 lg:row-end-5 lg:m-auto z-30">
+					<img src='https://via.placeholder.com/1260x840.jpeg'>
+          {# {{ utc_hero.hero_image }} #}
+				</div>
+			{# {% endif %} #}
+				<div class="lg:col-start-2 lg:col-end-2 lg:row-start-2 lg:row-end-3 lg:mr-8 p-4 pt-0 col-span-1 z-30 self-end">
+				{% block herocontent %}
+					{% block herotagtitle %}
+						{% if utchero.hero_tag %}
+							<p class="text-left font-semibold tracking-wide uppercase text-lg {{ body_color }}">
+								{{ utchero.hero_tag }}
+							</p>
+							<hr class="border-t-3 border-utc-new-gold-500 mt-2 mb-6 w-20"/>
+						{% endif %}
+						{% if utchero.hero_title %}
+							<h2 class="text-left {{ title_color }}">
+								{{ utchero.hero_title }}
+							</h2>
+						{% endif %}
+					{% endblock herotagtitle %}
+					{% block herotextbutton %}
+						{% if utchero.hero_text %}
+							<p class="text-left text-lg text-base {{ body_color }}">
+								{{ utchero.hero_text}}
+							</p>
+						{% endif %}
+						{% if utchero.hero_button_url %}
+							{% if utchero.hero_button_text %}
+								<p class="my-6 text-right">
+									<a href="{{ utchero.hero_button_url}}" class="font-semibold transition duration-500 ease-in-out {{ body_color }} hover:bg-gray-200 lg:hover:text-utc-new-blue-500 lg:hover:bg-white transform hover:scale-105 py-2 px-4 border {{ btn_border_color }} border-utc-new-blue-500" aria-label="Read the release">
+										Learn more
+										<i class="fas fa-angle-right text-utc-new-gold-500 font-semibold ml-1"></i>
+									</a>
+								</p>
+							{% endif %}
+						{% endif %}
+					{% endblock herotextbutton %}
+				{% endblock herocontent %}
+			</div>
+			{% block herobackground %}
+				<div class="w-full h-full {{ bg1_opacity }} bg-cover bg-center z-10 md:col-start-1 md:col-end-5 md:row-start-1 md:row-end-4" style="background-image: url({{ utc_hero.hero_bg }})">
+					<div class="h-full w-full {{ bg2_opacity }}" style="{{ bg_color }}"></div>
+				</div>
+			{% endblock herobackground %}
+		</div>
+	{% endblock utchero_content %}
+</div>
