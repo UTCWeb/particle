@@ -34,20 +34,25 @@
   {# image on left #}	 
 	{% if utchero.hero_align == 'Left' %}
 		<div class="lg:grid lg:grid-rows-utchero lg:grid-cols-utchero lg:gap-y-4 lg:grid-flow-row lg:mb-4 text-center">
-			{# {% if utc_hero.hero_image %} #}
+    {# TOdo ADD conditional statement if the image contains patternlab data or not. #}
+			{% if utc_hero.hero_image %}
 				<div class="lg:col-start-2 lg:col-end-3 lg:row-start-2 lg:row-end-6 lg:m-auto col-span-1 z-30">
-					{# {{ utc_hero.hero_image }}  #}
-          <img src='https://via.placeholder.com/1260x840.jpeg'>
+					{# {{ utchero.hero_image }} #}
+        {% include '@atoms/image/_image.twig' with {
+              image: utchero.hero_image,
+              image_classes: ['w-full']
+        } %}
+          {# <img src='https://via.placeholder.com/1260x840.jpeg'> #}
 				</div>
-			{# {% endif %} #}
+			{% endif %}
 				<div class="lg:col-start-3 lg:col-end-4 lg:row-start-1 lg:row-end-4 lg:my-auto lg:ml-8 p-4 z-30">
 	{% else %}
 	{# image on right #}	
 		<div class="lg:grid lg:grid-rows-utchero lg:grid-cols-utcheroright lg:gap-y-6 grid-flow-row lg:mb-4 text-center">
 			{# {% if utc_hero.hero_image %} #}
 				<div class="lg:col-start-3 lg:col-end-4 lg:row-start-2 lg:row-end-5 lg:m-auto z-30">
-					{# {{ utc_hero.hero_image }} #}
-          <img src='https://via.placeholder.com/1260x840.jpeg'>
+					{# {{ utchero.hero_image }} #}
+          {# <img src='https://via.placeholder.com/1260x840.jpeg'> #}
 				</div>
 			{# {% endif %} #}
 				<div class="lg:col-start-2 lg:col-end-2 lg:row-start-1 lg:row-end-4 lg:mr-8 lg:my-auto py-4 px-6 col-span-1 z-30">

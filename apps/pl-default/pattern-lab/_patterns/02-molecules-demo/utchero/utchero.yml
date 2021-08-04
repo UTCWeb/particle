@@ -20,5 +20,10 @@ utchero_1:
   hero_button_url: 'utc.edu'
   hero_color: 'Dark Blue'
   hero_align: 'Right'
-  hero_image: 'https://via.placeholder.com/2000x2000.jpeg'
+  hero_image:
+    variant: 'primary'
+    src: 'https://via.placeholder.com/1260x840.jpeg'
+    alt: 'Graybox placeholder image'
+    style: 'card'
+    placeholder: true
   hero_tag: 'Admissions'
