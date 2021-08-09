@@ -35,24 +35,23 @@
 	{% if utchero.hero_align == 'Left' %}
 		<div class="lg:grid lg:grid-rows-utchero lg:grid-cols-utchero lg:gap-y-4 lg:grid-flow-row lg:mb-4 text-center">
     {# TOdo ADD a connection to a proton image component. #}
-		{% set bg1_opacity = 'opacity-20' %}
 	{% block heroleftimage %}
-		{# {% if utc_hero.hero_image %} #}
+		{% if utc_hero.hero_image %}
 				<div class="lg:col-start-2 lg:col-end-3 lg:row-start-2 lg:row-end-6 lg:m-auto col-span-1 z-30">
           			<img src='http://placeimg.com/1260/840/nature'>
 				</div>
-		{# {% endif %} #}
+			{% endif %}
 				<div class="lg:col-start-3 lg:col-end-4 lg:row-start-1 lg:row-end-4 lg:my-auto lg:ml-8 p-4 z-30">
 	{% endblock heroleftimage %}
 	{% else %}
 	{# image on right #}
 	{% block herorightimage %}	
 		<div class="lg:grid lg:grid-rows-utchero lg:grid-cols-utcheroright lg:gap-y-6 grid-flow-row lg:mb-4 text-center">
-			{# {% if utc_hero.hero_image %} #}
+			{% if utc_hero.hero_image %}
 				<div class="lg:col-start-3 lg:col-end-4 lg:row-start-2 lg:row-end-5 lg:m-auto z-30">
           				<img src='http://placeimg.com/1260/840/nature'>
 				</div>
-			{# {% endif %} #}
+			{% endif %}
 				<div class="lg:col-start-2 lg:col-end-2 lg:row-start-1 lg:row-end-4 lg:mr-8 lg:my-auto py-4 px-6 col-span-1 z-30">
 	{% endblock herorightimage %}
 	{% endif %}
