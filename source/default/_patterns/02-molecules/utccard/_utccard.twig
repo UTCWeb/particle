@@ -1,0 +1,95 @@
+{#
+/**
+ * @file
+ * Theme override to display a block.
+ *
+ * Available variables:
+ * - plugin_id: The ID of the block implementation.
+ * - label: The configured label of the block if visible.
+ * - configuration: A list of the block's configuration values.
+ *   - label: The configured label for the block.
+ *   - label_display: The display settings for the label.
+ *   - provider: The module or other provider that provided this block plugin.
+ *   - Block plugin specific settings will also be stored here.
+ * - content: The content of this block.
+ * - attributes: array of HTML attributes populated by modules, intended to
+ *   be added to the main container tag of this template.
+ *   - id: A valid HTML ID and guaranteed unique.
+ * - title_attributes: Same as attributes, except applied to the main title
+ *   tag that appears in the template.
+ * - title_prefix: Additional output populated by modules, intended to be
+ *   displayed in front of the main title tag that appears in the template.
+ * - title_suffix: Additional output populated by modules, intended to be
+ *   displayed after the main title tag that appears in the template.
+ *
+ * @see template_preprocess_block()
+ * 
+ * This is the PL version of the block--utc-card-base.html.html.twig. NOTE: The image is currently hardcoded.
+ */
+#}
+
+{% set card_classes = [
+  'utc-card-2',
+  'h-100',
+  utccard.card_type ? 'utc-card-2--' ~ utccard.card_type,
+  utccard.card_color ? 'utc-card-2--' ~ utccard.card_color : 'utc-card-2--white',
+  utccard.card_width ? 'utc-card-2--w-' ~ utccard.card_width,
+  utccard.text_alignment ? 'utc-card-2--align-' ~ utccard.text_alignment,
+  utccard.card_link ? 'utc-card-2--card-link',
+  utccard.card_img_fill ? card_img_fill
+] | sort | join(' ') | trim %}
+
+{# could use include statements for items like images and buttons in design system #}
+  {% if utccard.card_link %}
+    <a href="{{ utccard.card_link }}" target="{{ utccard.card_link_target }}">
+  {% endif %}
+  
+
+  <div class="{{ card_classes }} max-w-md">
+
+    {% if (utccard.card_icon is empty) and utccard.card_image %}
+      <img src='http://placeimg.com/900/600/business'>
+    {% endif %}
+
+    {% if utccard.card_icon %}
+      <div class="utc-card-2__icon utc-card-2__icon--{{ utccard.card_icon_color }}">
+        {{ utccard.card_icon }}
+      </div>
+    {% endif %}
+    {% block card_body %}
+        <div class="utc-card-2__body">
+          <div class="utc-card-2__content">
+            {% if utccard.card_title %}
+              <h3 class="utc-card-2__title">{{ utccard.card_title }}
+              </h3>
+            {% endif %}
+            <p class="font-utcheadings">This card features the following:</p>
+            <ul class="pl-0">
+            {% if utccard.card_text %}
+            <div class="utc-card-2__text mb-8">
+                {% for item in utccard.card_text %}
+                  <li class="font-utcheadings py-0 my-0 block">
+                    {{ item }}
+                  </li>
+                {% endfor %}
+            </div>
+            {% endif %}
+             </ul>
+          </div>
+      
+        {% if (utccard.card_link is empty) and utccard.card_button_url %}
+          <div class="utc-card-2__action-container">
+            <a href="{{ utccard.card_button_url }}" class="font-medium btn {{ utccard.card_button_style }}" target="{{ utccard.card_button_target }}">
+              {{ utccard.card_button_text }}
+           </a>
+         </div>
+        {% endif %}
+
+       </div>
+      {% endblock card_body %}
+
+  </div>
+
+	{% if utccard.card_link %}
+     </a>
+  {% endif %}
