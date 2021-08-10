@@ -1,0 +1,516 @@
+utccard_demo:
+  title: 'UTC Cards: Horizontal with White Background'
+  content:
+    lead: 'Demonstration of our UTC Card Component'
+    summary:
+      'Provide a custom UTC card component utilizing Tailwind component as default'
+
+utccard_1:
+  card_image_select:
+    variant: 'primary'
+    src: ''
+    alt: 'Graybox placeholder image'
+    style: 'card'
+    placeholder: true
+  card_type: 'thumbnail'
+  card_color: 'white'
+  card_width: ''
+  text_alignment: "left"
+  card_link: false
+  card_link_target: ""
+  card_title: 'Card Title'
+  card_text:
+    - '&#8226; white background'
+    - '&#8226; solid blue button'
+    - '&#8226; not a link itself'
+    - '&#8226; horizontal image'
+    - '&#8226; left-aligned'
+  card_button_text: 'Button Text'
+  card_button_url: 'utc.edu'
+  card_button_style: 'btn--navy'
+  card_button_target: ''
+  card_icon: ''
+  card_icon_color: ''
+  card_image:
+    variant: 'primary'
+    src: 'https://via.placeholder.com/900x600.jpeg'
+    alt: 'Graybox placeholder image'
+    style: 'card'
+    placeholder: true
+  card_img_fill: true
+
+utccard_2:
+  card_image_select:
+    variant: 'primary'
+    src: ''
+    alt: 'Graybox placeholder image'
+    style: 'card'
+    placeholder: true
+  card_type: 'thumbnail'
+  card_color: 'white'
+  card_width: ''
+  text_alignment: "center"
+  card_link: false
+  card_link_target: ""
+  card_title: 'Card Title'
+  card_text:
+    - '&#8226; white background'
+    - '&#8226; solid blue button'
+    - '&#8226; not a link itself'
+    - '&#8226; horizontal image'
+    - '&#8226; center-aligned'
+  card_button_text: 'Button Text'
+  card_button_url: 'utc.edu'
+  card_button_style: 'btn--navy'
+  card_button_target: ''
+  card_icon: ''
+  card_icon_color: ''
+  card_image:
+    variant: 'primary'
+    src: 'https://via.placeholder.com/900x600.jpeg'
+    alt: 'Graybox placeholder image'
+    style: 'card'
+    placeholder: true
+  card_img_fill: true
+
+utccard_3:
+  card_image_select:
+    variant: 'primary'
+    src: ''
+    alt: 'Graybox placeholder image'
+    style: 'card'
+    placeholder: true
+  card_type: 'thumbnail'
+  card_color: 'white'
+  card_width: ''
+  text_alignment: "right"
+  card_link: false
+  card_link_target: ""
+  card_title: 'Card Title'
+  card_text:
+    - '&#8226; white background'
+    - '&#8226; solid blue button'
+    - '&#8226; not a link itself'
+    - '&#8226; horizontal image'
+    - '&#8226; right-aligned'
+  card_button_text: 'Button Text'
+  card_button_url: 'utc.edu'
+  card_button_style: 'btn--navy'
+  card_button_target: ''
+  card_icon: ''
+  card_icon_color: ''
+  card_image:
+    variant: 'primary'
+    src: 'https://via.placeholder.com/900x600.jpeg'
+    alt: 'Graybox placeholder image'
+    style: 'card'
+    placeholder: true
+  card_img_fill: true
+
+utccard_4:
+  card_image_select:
+    variant: 'primary'
+    src: ''
+    alt: 'Graybox placeholder image'
+    style: 'card'
+    placeholder: true
+  card_type: 'thumbnail'
+  card_color: 'white'
+  card_width: ''
+  text_alignment: "left"
+  card_link: false
+  card_link_target: ""
+  card_title: 'Card Title'
+  card_text:
+    - '&#8226; white background'
+    - '&#8226; oulined blue button'
+    - '&#8226; not a link itself'
+    - '&#8226; horizontal image'
+    - '&#8226; left-aligned'
+  card_button_text: 'Button Text'
+  card_button_url: 'utc.edu'
+  card_button_style: 'btn--navy-outline'
+  card_button_target: ''
+  card_icon: ''
+  card_icon_color: ''
+  card_image:
+    variant: 'primary'
+    src: 'https://via.placeholder.com/900x600.jpeg'
+    alt: 'Graybox placeholder image'
+    style: 'card'
+    placeholder: true
+  card_img_fill: true
+
+utccard_5:
+  card_image_select:
+    variant: 'primary'
+    src: ''
+    alt: 'Graybox placeholder image'
+    style: 'card'
+    placeholder: true
+  card_type: 'thumbnail'
+  card_color: 'white'
+  card_width: ''
+  text_alignment: "center"
+  card_link: false
+  card_link_target: ""
+  card_title: 'Card Title'
+  card_text:
+    - '&#8226; white background'
+    - '&#8226; oulined blue button'
+    - '&#8226; not a link itself'
+    - '&#8226; horizontal image'
+    - '&#8226; center-aligned'
+  card_button_text: 'Button Text'
+  card_button_url: 'utc.edu'
+  card_button_style: 'btn--navy-outline'
+  card_button_target: ''
+  card_icon: ''
+  card_icon_color: ''
+  card_image:
+    variant: 'primary'
+    src: 'https://via.placeholder.com/900x600.jpeg'
+    alt: 'Graybox placeholder image'
+    style: 'card'
+    placeholder: true
+  card_img_fill: true
+
+utccard_6:
+  card_image_select:
+    variant: 'primary'
+    src: ''
+    alt: 'Graybox placeholder image'
+    style: 'card'
+    placeholder: true
+  card_type: 'thumbnail'
+  card_color: 'white'
+  card_width: ''
+  text_alignment: "right"
+  card_link: false
+  card_link_target: ""
+  card_title: 'Card Title'
+  card_text:
+    - '&#8226; white background'
+    - '&#8226; outlined blue button'
+    - '&#8226; not a link itself'
+    - '&#8226; horizontal image'
+    - '&#8226; right-aligned'
+  card_button_text: 'Button Text'
+  card_button_url: 'utc.edu'
+  card_button_style: 'btn--navy-outline'
+  card_button_target: ''
+  card_icon: ''
+  card_icon_color: ''
+  card_image:
+    variant: 'primary'
+    src: 'https://via.placeholder.com/900x600.jpeg'
+    alt: 'Graybox placeholder image'
+    style: 'card'
+    placeholder: true
+  card_img_fill: true
+
+utccard_7:
+  card_image_select:
+    variant: 'primary'
+    src: ''
+    alt: 'Graybox placeholder image'
+    style: 'card'
+    placeholder: true
+  card_type: 'thumbnail'
+  card_color: 'white'
+  card_width: ''
+  text_alignment: "left"
+  card_link: false
+  card_link_target: ""
+  card_title: 'Card Title'
+  card_text:
+    - '&#8226; white background'
+    - '&#8226; green button'
+    - '&#8226; not a link itself'
+    - '&#8226; horizontal image'
+    - '&#8226; left-aligned'
+  card_button_text: 'Button Text'
+  card_button_url: 'utc.edu'
+  card_button_style: 'btn--green'
+  card_button_target: ''
+  card_icon: ''
+  card_icon_color: ''
+  card_image:
+    variant: 'primary'
+    src: 'https://via.placeholder.com/900x600.jpeg'
+    alt: 'Graybox placeholder image'
+    style: 'card'
+    placeholder: true
+  card_img_fill: true
+
+utccard_8:
+  card_image_select:
+    variant: 'primary'
+    src: ''
+    alt: 'Graybox placeholder image'
+    style: 'card'
+    placeholder: true
+  card_type: 'thumbnail'
+  card_color: 'white'
+  card_width: ''
+  text_alignment: "center"
+  card_link: false
+  card_link_target: ""
+  card_title: 'Card Title'
+  card_text:
+    - '&#8226; white background'
+    - '&#8226; green button'
+    - '&#8226; not a link itself'
+    - '&#8226; horizontal image'
+    - '&#8226; center-aligned'
+  card_button_text: 'Button Text'
+  card_button_url: 'utc.edu'
+  card_button_style: 'btn--green'
+  card_button_target: ''
+  card_icon: ''
+  card_icon_color: ''
+  card_image:
+    variant: 'primary'
+    src: 'https://via.placeholder.com/900x600.jpeg'
+    alt: 'Graybox placeholder image'
+    style: 'card'
+    placeholder: true
+  card_img_fill: true
+
+utccard_9:
+  card_image_select:
+    variant: 'primary'
+    src: ''
+    alt: 'Graybox placeholder image'
+    style: 'card'
+    placeholder: true
+  card_type: 'thumbnail'
+  card_color: 'white'
+  card_width: ''
+  text_alignment: "right"
+  card_link: false
+  card_link_target: ""
+  card_title: 'Card Title'
+  card_text:
+    - '&#8226; white background'
+    - '&#8226; green button'
+    - '&#8226; not a link itself'
+    - '&#8226; horizontal image'
+    - '&#8226; right-aligned'
+  card_button_text: 'Button Text'
+  card_button_url: 'utc.edu'
+  card_button_style: 'btn--green'
+  card_button_target: ''
+  card_icon: ''
+  card_icon_color: ''
+  card_image:
+    variant: 'primary'
+    src: 'https://via.placeholder.com/900x600.jpeg'
+    alt: 'Graybox placeholder image'
+    style: 'card'
+    placeholder: true
+  card_img_fill: true
+
+utccard_10:
+  card_image_select:
+    variant: 'primary'
+    src: ''
+    alt: 'Graybox placeholder image'
+    style: 'card'
+    placeholder: true
+  card_type: 'thumbnail'
+  card_color: 'white'
+  card_width: ''
+  text_alignment: "left"
+  card_link: false
+  card_link_target: ""
+  card_title: 'Card Title'
+  card_text:
+    - '&#8226; white background'
+    - '&#8226; yellow button'
+    - '&#8226; not a link itself'
+    - '&#8226; horizontal image'
+    - '&#8226; left-aligned'
+  card_button_text: 'Button Text'
+  card_button_url: 'utc.edu'
+  card_button_style: 'btn--yellow'
+  card_button_target: ''
+  card_icon: ''
+  card_icon_color: ''
+  card_image:
+    variant: 'primary'
+    src: 'https://via.placeholder.com/900x600.jpeg'
+    alt: 'Graybox placeholder image'
+    style: 'card'
+    placeholder: true
+  card_img_fill: true
+
+utccard_11:
+  card_image_select:
+    variant: 'primary'
+    src: ''
+    alt: 'Graybox placeholder image'
+    style: 'card'
+    placeholder: true
+  card_type: 'thumbnail'
+  card_color: 'white'
+  card_width: ''
+  text_alignment: "center"
+  card_link: false
+  card_link_target: ""
+  card_title: 'Card Title'
+  card_text:
+    - '&#8226; white background'
+    - '&#8226; yellow button'
+    - '&#8226; not a link itself'
+    - '&#8226; horizontal image'
+    - '&#8226; center-aligned'
+  card_button_text: 'Button Text'
+  card_button_url: 'utc.edu'
+  card_button_style: 'btn--yellow'
+  card_button_target: ''
+  card_icon: ''
+  card_icon_color: ''
+  card_image:
+    variant: 'primary'
+    src: 'https://via.placeholder.com/900x600.jpeg'
+    alt: 'Graybox placeholder image'
+    style: 'card'
+    placeholder: true
+  card_img_fill: true
+
+utccard_12:
+  card_image_select:
+    variant: 'primary'
+    src: ''
+    alt: 'Graybox placeholder image'
+    style: 'card'
+    placeholder: true
+  card_type: 'thumbnail'
+  card_color: 'white'
+  card_width: ''
+  text_alignment: "right"
+  card_link: false
+  card_link_target: ""
+  card_title: 'Card Title'
+  card_text:
+    - '&#8226; white background'
+    - '&#8226; yellow button'
+    - '&#8226; not a link itself'
+    - '&#8226; horizontal image'
+    - '&#8226; right-aligned'
+  card_button_text: 'Button Text'
+  card_button_url: 'utc.edu'
+  card_button_style: 'btn--yellow'
+  card_button_target: ''
+  card_icon: ''
+  card_icon_color: ''
+  card_image:
+    variant: 'primary'
+    src: 'https://via.placeholder.com/900x600.jpeg'
+    alt: 'Graybox placeholder image'
+    style: 'card'
+    placeholder: true
+  card_img_fill: true
+
+utccard_13:
+  card_image_select:
+    variant: 'primary'
+    src: ''
+    alt: 'Graybox placeholder image'
+    style: 'card'
+    placeholder: true
+  card_type: 'thumbnail'
+  card_color: 'white'
+  card_width: ''
+  text_alignment: "left"
+  card_link: false
+  card_link_target: ""
+  card_title: 'Card Title'
+  card_text:
+    - '&#8226; white background'
+    - '&#8226; white outlined button (not recommended)'
+    - '&#8226; not a link itself'
+    - '&#8226; horizontal image'
+    - '&#8226; left-aligned'
+  card_button_text: 'Button Text'
+  card_button_url: 'utc.edu'
+  card_button_style: 'btn--white-outline'
+  card_button_target: ''
+  card_icon: ''
+  card_icon_color: ''
+  card_image:
+    variant: 'primary'
+    src: 'https://via.placeholder.com/900x600.jpeg'
+    alt: 'Graybox placeholder image'
+    style: 'card'
+    placeholder: true
+  card_img_fill: true
+
+utccard_14:
+  card_image_select:
+    variant: 'primary'
+    src: ''
+    alt: 'Graybox placeholder image'
+    style: 'card'
+    placeholder: true
+  card_type: 'thumbnail'
+  card_color: 'white'
+  card_width: ''
+  text_alignment: "center"
+  card_link: false
+  card_link_target: ""
+  card_title: 'Card Title'
+  card_text:
+    - '&#8226; white background'
+    - '&#8226; white outlined button (not recommended)'
+    - '&#8226; not a link itself'
+    - '&#8226; horizontal image'
+    - '&#8226; center-aligned'
+  card_button_text: 'Button Text'
+  card_button_url: 'utc.edu'
+  card_button_style: 'btn--white-outline'
+  card_button_target: ''
+  card_icon: ''
+  card_icon_color: ''
+  card_image:
+    variant: 'primary'
+    src: 'https://via.placeholder.com/900x600.jpeg'
+    alt: 'Graybox placeholder image'
+    style: 'card'
+    placeholder: true
+  card_img_fill: true
+
+utccard_15:
+  card_image_select:
+    variant: 'primary'
+    src: ''
+    alt: 'Graybox placeholder image'
+    style: 'card'
+    placeholder: true
+  card_type: 'thumbnail'
+  card_color: 'white'
+  card_width: ''
+  text_alignment: "right"
+  card_link: false
+  card_link_target: ""
+  card_title: 'Card Title'
+  card_text:
+    - '&#8226; white background'
+    - '&#8226; white outlined button (not recommended)'
+    - '&#8226; not a link itself'
+    - '&#8226; horizontal image'
+    - '&#8226; right-aligned'
+  card_button_text: 'Button Text'
+  card_button_url: 'utc.edu'
+  card_button_style: 'btn--white-outline'
+  card_button_target: ''
+  card_icon: ''
+  card_icon_color: ''
+  card_image:
+    variant: 'primary'
+    src: 'https://via.placeholder.com/900x600.jpeg'
+    alt: 'Graybox placeholder image'
+    style: 'card'
+    placeholder: true
+  card_img_fill: true
