@@ -28,16 +28,89 @@
  */
 #}
 
+{% if utccard.card_type == 'wide' %}
+  {% set card_orientation = 'flex flex-utccard flex-row' %}
+  {% set flex_image = 'flex-utccardimg' %}
+  {% set flex_body = 'flex-utccardbody' %}
+{% elseif utccard.card_color == 'thumbnail' %}
+  {% set card_orientation = 'flex-col' %}
+{% endif %}
+
+{#{% if utccard.card_type == 'wide' and utccard.card_icon %}
+  {% set icon_size = 'wideicon' %}
+{% else %}
+  {% set icon_size = utccard.card_icon_size %}
+{% endif %}#}
+
+{% if utccard.card_color == 'white' %}
+  {% set card_background = 'bg-white shadow-utccardwhite border-none opacity-100' %}
+{% elseif utccard.card_color == 'lightblue' %}
+  {% set card_background = 'bg-utc-new-blue-100 shadow-utccardwhite border-none opacity-100' %}
+{% elseif utccard.card_color == 'none' %}
+  {% set card_background = '' %}
+{% endif %}
+
+{% if utccard.card_width == 'none' %}
+  {% set card_size = '' %}
+{% elseif utccard.card_width == '50' %}
+  {% set card_size = 'w-1/2' %}
+{% elseif utccard.card_width == '75' %}
+  {% set card_size = 'w-3/4' %}
+{% elseif utccard.card_width == '100' %}
+  {% set card_size = 'w-full' %}
+{% else %}
+  {% set card_size = '' %}
+{% endif %}
+
+{% if utccard.text_alignment == 'left' %}
+  {% set card_alignment = 'text-left' %}
+{% elseif utccard.text_alignment == 'center' %}
+  {% set card_alignment = 'text-center' %}
+{% elseif utccard.text_alignment == 'right' %}
+  {% set card_alignment = 'text-right' %}
+{% endif %}
+
+{% if utccard.card_link and utccard.card_color == 'white' %}
+  {% set card_link_hover = 'hover:bg-utc-new-blue-100' %}
+{% elseif utccard.card_link and utccard.card_color == 'lightblue' %}
+  {% set card_link_hover = 'hover:opacity-80' %}
+{% elseif utccard.card_link and utccard.card_color == 'none' %}
+  {% set card_link_hover = 'hover:shadow-utccardnone' %}
+{% endif %}
+
+{% if utccard.card_img_fill and not utccard.card_icon %}
+  {% set image_full = 'h-full w-full object-cover' %}
+{% else %}
+  {% set image_full = 'p-6 flex items-center justify-center' %}
+{% endif %}
+
+{% if utccard.card_icon_color == 'blue' %}
+  {% set icon_color = 'text-utc-new-blue-500' %}
+{% elseif utccard.card_icon_color == 'yellow' %}
+  {% set icon_color = 'text-utc-new-gold-500' %}
+{% endif %}
+
+
+{% if utccard.card_color == 'lightblue' and utccard.card_icon and utccard.card_icon_border %}
+  {% set border_color = 'border-white' %}
+{% endif %}
+
+
 {% set card_classes = [
-  'utc-card-2',
-  'h-100',
-  utccard.card_type ? 'utc-card-2--' ~ utccard.card_type,
-  utccard.card_color ? 'utc-card-2--' ~ utccard.card_color : 'utc-card-2--white',
-  utccard.card_width ? 'utc-card-2--w-' ~ utccard.card_width,
-  utccard.text_alignment ? 'utc-card-2--align-' ~ utccard.text_alignment,
-  utccard.card_link ? 'utc-card-2--card-link',
-  utccard.card_img_fill ? card_img_fill
+  utccard.card_type ? card_orientation,
+  utccard.card_color ? card_background,
+  utccard.card_width ? card_size,
+  utccard.text_alignment ? card_alignment,
+  utccard.card_link ? card_link_hover,
 ] | sort | join(' ') | trim %}
+
+{% set icon_classes = [
+  utccard.card_icon_fa ? 'fa-' ~ utccard.card_icon_fa,
+  utccard.card_icon_size ? 'text-icon-' ~ utccard.card_icon_size,
+  utccard.card_icon_color ? icon_color,
+  utccard.card_icon_border ? 'fa-border ' ~ border_color,
+] | sort | join(' ') | trim %}
+
 
 {# could use include statements for items like images and buttons in design system #}
   {% if utccard.card_link %}
@@ -45,30 +118,37 @@
   {% endif %}
   
 
-  <div class="{{ card_classes }} max-w-md">
+  <div class="h-full relative min-w-0 {{ card_classes }}">
 
     {% if (utccard.card_icon is empty) and utccard.card_image %}
-      <img src='http://placeimg.com/900/600/business'>
+      <div class="{{ flex_image }}">
+        <img class="{{ image_full }}" src='{{ utccard.card_image.src }}'>
+      </div>
     {% endif %}
 
     {% if utccard.card_icon %}
-      <div class="utc-card-2__icon utc-card-2__icon--{{ utccard.card_icon_color }}">
-        {{ utccard.card_icon }}
+      <div class="flex text-center {{ flex_image }} justify-center">
+        <div class="fontawesome-icons">
+          <div class="fontawesome-icon {{ image_full }}">
+            <i class="fas {{ icon_classes }}"></i>
+          </div>
+        </div>
       </div>
     {% endif %}
+
     {% block card_body %}
-        <div class="utc-card-2__body">
-          <div class="utc-card-2__content">
+        <div class="p-5 h-full {{ flex_body }}">
+          <div class="mb-0">
             {% if utccard.card_title %}
-              <h3 class="utc-card-2__title">{{ utccard.card_title }}
+              <h3 class="text-xl font-semibold">{{ utccard.card_title }}
               </h3>
             {% endif %}
-            <p class="font-utcheadings">This card features the following:</p>
+            <p>This card features the following:</p>
             <ul class="pl-0">
             {% if utccard.card_text %}
-            <div class="utc-card-2__text mb-8">
+            <div class="mb-8">
                 {% for item in utccard.card_text %}
-                  <li class="font-utcheadings py-0 my-0 block">
+                  <li class="py-0 my-0 block">
                     {{ item }}
                   </li>
                 {% endfor %}
@@ -90,6 +170,7 @@
 
   </div>
 
-	{% if utccard.card_link %}
+  {% if utccard.card_link %}
      </a>
   {% endif %}
+
