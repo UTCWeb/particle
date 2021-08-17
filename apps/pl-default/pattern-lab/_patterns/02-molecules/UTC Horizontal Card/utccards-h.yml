@@ -1,0 +1,474 @@
+utccard_demo:
+  title: ''
+  content:
+    lead: 'Demonstration of our UTC Card Component'
+    summary:
+      'Provides a custom UTC card component utilizing Tailwind component as default. Card features can be mixed and matched and include the following: card color, card width, text alignment, card link or button link (see "Atoms" for button options), card image or icon (including icon color, size and border), and image fill or not (padded).'
+
+utccard_1:
+  card_image_select:
+    variant: 'primary'
+    src: ''
+    alt: 'Graybox placeholder image'
+    style: 'card'
+    placeholder: true
+  card_type: 'wide'
+  card_color: 'white'
+  card_width: '50'
+  text_alignment: "left"
+  card_link: false
+  card_link_target: ""
+  card_title: 'Card Title'
+  card_text:
+    - '&#8226; white background'
+    - '&#8226; solid blue button'
+    - '&#8226; not a link itself'
+    - '&#8226; horizontal image cropped'
+    - '&#8226; left-aligned'
+    - '&#8226; 50% wide'
+    - 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+  card_button_text: 'Button Text'
+  card_button_url: 'utc.edu'
+  card_button_style: 'btn--navy'
+  card_button_target: ''
+  card_icon: false
+  card_icon_color: ''
+  card_icon_fa: ''
+  card_icon_size: ''
+  card_icon_border: false
+  card_image:
+    variant: 'primary'
+    src: 'https://via.placeholder.com/900x600.jpeg'
+    alt: 'Graybox placeholder image'
+    style: 'card'
+    placeholder: true
+  card_img_fill: true
+
+utccard_2:
+  card_image_select:
+    variant: 'primary'
+    src: ''
+    alt: 'Graybox placeholder image'
+    style: 'card'
+    placeholder: true
+  card_type: 'wide'
+  card_color: 'lightblue'
+  card_width: '75'
+  text_alignment: "center"
+  card_link: false
+  card_link_target: ""
+  card_title: 'Card Title'
+  card_text:
+    - '&#8226; light blue background'
+    - '&#8226; outlined blue button'
+    - '&#8226; not a link itself'
+    - '&#8226; horizontal image'
+    - '&#8226; center-aligned'
+    - '&#8226; 75% wide'
+    - 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'    
+  card_button_text: 'Button Text'
+  card_button_url: 'utc.edu'
+  card_button_style: 'btn--navy-outline'
+  card_button_target: ''
+  card_icon: false
+  card_icon_color: ''
+  card_icon_fa: ''
+  card_icon_size: ''
+  card_icon_border: false
+  card_image:
+    variant: 'primary'
+    src: 'https://via.placeholder.com/900x600.jpeg'
+    alt: 'Graybox placeholder image'
+    style: 'card'
+    placeholder: true
+  card_img_fill: true
+
+utccard_3:
+  card_image_select:
+    variant: 'primary'
+    src: ''
+    alt: 'Graybox placeholder image'
+    style: 'card'
+    placeholder: true
+  card_type: 'wide'
+  card_color: 'none'
+  card_width: ''
+  text_alignment: "right"
+  card_link: false
+  card_link_target: ""
+  card_title: 'Card Title'
+  card_text:
+    - '&#8226; no background and no shadows'
+    - '&#8226; yellow button'
+    - '&#8226; not a link itself'
+    - '&#8226; horizontal image'
+    - '&#8226; right-aligned'
+    - '&#8226; 100% wide'
+    - 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'   
+  card_button_text: 'Button Text'
+  card_button_url: 'utc.edu'
+  card_button_style: 'btn--yellow'
+  card_button_target: ''
+  card_icon: false
+  card_icon_color: ''
+  card_icon_fa: ''
+  card_icon_size: ''
+  card_icon_border: false
+  card_image:
+    variant: 'primary'
+    src: 'https://via.placeholder.com/900x600.jpeg'
+    alt: 'Graybox placeholder image'
+    style: 'card'
+    placeholder: true
+  card_img_fill: true
+
+utccard_4:
+  card_image_select:
+    variant: 'primary'
+    src: '#'
+    alt: 'Graybox placeholder image'
+    style: 'card'
+    placeholder: true
+  card_type: 'wide'
+  card_color: 'white'
+  card_width: '50'
+  text_alignment: "left"
+  card_link: true
+  card_link_target: ""
+  card_title: 'Card Title'
+  card_text:
+    - '&#8226; white background'
+    - '&#8226; no button'
+    - '&#8226; is a link itself'
+    - '&#8226; horizontal image cropped'
+    - '&#8226; left-aligned'
+    - '&#8226; 50% wide'
+    - 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'    
+  card_button_text: ''
+  card_button_url: ''
+  card_button_style: ''
+  card_button_target: ''
+  card_icon: false
+  card_icon_color: ''
+  card_icon_fa: ''
+  card_icon_size: ''
+  card_icon_border: false
+  card_image:
+    variant: 'primary'
+    src: 'https://via.placeholder.com/900x600.jpeg'
+    alt: 'Graybox placeholder image'
+    style: 'card'
+    placeholder: true
+  card_img_fill: true
+
+utccard_5:
+  card_image_select:
+    variant: 'primary'
+    src: '#'
+    alt: 'Graybox placeholder image'
+    style: 'card'
+    placeholder: true
+  card_type: 'wide'
+  card_color: 'lightblue'
+  card_width: '75'
+  text_alignment: "left"
+  card_link: true
+  card_link_target: ""
+  card_title: 'Card Title'
+  card_text:
+    - '&#8226; light blue background'
+    - '&#8226; no button'
+    - '&#8226; is a link itself'
+    - '&#8226; horizontal image'
+    - '&#8226; left-aligned'
+    - '&#8226; 75% wide'
+    - 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'    
+  card_button_text: ''
+  card_button_url: ''
+  card_button_style: ''
+  card_button_target: ''
+  card_icon: false
+  card_icon_color: ''
+  card_icon_fa: ''
+  card_icon_size: ''
+  card_icon_border: false
+  card_image:
+    variant: 'primary'
+    src: 'https://via.placeholder.com/900x600.jpeg'
+    alt: 'Graybox placeholder image'
+    style: 'card'
+    placeholder: true
+  card_img_fill: true
+
+utccard_6:
+  card_image_select:
+    variant: 'primary'
+    src: '#'
+    alt: 'Graybox placeholder image'
+    style: 'card'
+    placeholder: true
+  card_type: 'wide'
+  card_color: 'none'
+  card_width: ''
+  text_alignment: "left"
+  card_link: true
+  card_link_target: ""
+  card_title: 'Card Title'
+  card_text:
+    - '&#8226; no background and no shadows'
+    - '&#8226; no button'
+    - '&#8226; is a link itself.'
+    - '&#8226; horizontal image'
+    - '&#8226; left-aligned'
+    - '&#8226; 100% wide'
+    - 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'    
+  card_button_text: ''
+  card_button_url: ''
+  card_button_style: ''
+  card_button_target: ''
+  card_icon: false
+  card_icon_color: ''
+  card_icon_fa: ''
+  card_icon_size: ''
+  card_icon_border: false
+  card_image:
+    variant: 'primary'
+    src: 'https://via.placeholder.com/900x600.jpeg'
+    alt: 'Graybox placeholder image'
+    style: 'card'
+    placeholder: true
+  card_img_fill: true
+
+utccard_7:
+  card_image_select:
+    variant: 'primary'
+    src: ''
+    alt: 'Graybox placeholder image'
+    style: 'card'
+    placeholder: true
+  card_type: 'wide'
+  card_color: 'white'
+  card_width: '50'
+  text_alignment: "left"
+  card_link: false
+  card_link_target: ""
+  card_title: 'Card Title'
+  card_text:
+    - '&#8226; white background'
+    - '&#8226; solid blue button'
+    - '&#8226; not a link itself'
+    - '&#8226; vertical image'
+    - '&#8226; left-aligned'
+    - '&#8226; 50% width'
+    - 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+  card_button_text: 'Button Text'
+  card_button_url: 'utc.edu'
+  card_button_style: 'btn--navy'
+  card_button_target: ''
+  card_icon: false
+  card_icon_color: ''
+  card_icon_fa: ''
+  card_icon_size: ''
+  card_icon_border: false
+  card_image:
+    variant: 'primary'
+    src: 'https://via.placeholder.com/600x900.jpeg'
+    alt: 'Graybox placeholder image'
+    style: 'card'
+    placeholder: true
+  card_img_fill: true
+
+utccard_8:
+  card_image_select:
+    variant: 'primary'
+    src: ''
+    alt: 'Graybox placeholder image'
+    style: 'card'
+    placeholder: true
+  card_type: 'wide'
+  card_color: 'lightblue'
+  card_width: '75'
+  text_alignment: "left"
+  card_link: false
+  card_link_target: ""
+  card_title: 'Card Title'
+  card_text:
+    - '&#8226; light blue background'
+    - '&#8226; outlined blue button'
+    - '&#8226; not a link itself'
+    - '&#8226; vertical image'
+    - '&#8226; left-aligned'
+    - '&#8226; 75% width'
+    - 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'    
+  card_button_text: 'Button Text'
+  card_button_url: 'utc.edu'
+  card_button_style: 'btn--navy-outline'
+  card_button_target: ''
+  card_icon: false
+  card_icon_color: ''
+  card_icon_fa: ''
+  card_icon_size: ''
+  card_icon_border: false
+  card_image:
+    variant: 'primary'
+    src: 'https://via.placeholder.com/600x900.jpeg'
+    alt: 'Graybox placeholder image'
+    style: 'card'
+    placeholder: true
+  card_img_fill: true
+
+utccard_9:
+  card_image_select:
+    variant: 'primary'
+    src: ''
+    alt: 'Graybox placeholder image'
+    style: 'card'
+    placeholder: true
+  card_type: 'wide'
+  card_color: 'none'
+  card_width: ''
+  text_alignment: "left"
+  card_link: false
+  card_link_target: ""
+  card_title: 'Card Title'
+  card_text:
+    - '&#8226; no background and no shadows'
+    - '&#8226; yellow button'
+    - '&#8226; not a link itself'
+    - '&#8226; vertical image'
+    - '&#8226; left-aligned'
+    - '&#8226; 100% width'
+    - 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'   
+  card_button_text: 'Button Text'
+  card_button_url: 'utc.edu'
+  card_button_style: 'btn--yellow'
+  card_button_target: ''
+  card_icon: false
+  card_icon_color: ''
+  card_icon_fa: ''
+  card_icon_size: ''
+  card_icon_border: false
+  card_image:
+    variant: 'primary'
+    src: 'https://via.placeholder.com/600x900.jpeg'
+    alt: 'Graybox placeholder image'
+    style: 'card'
+    placeholder: true
+  card_img_fill: true
+
+utccard_10:
+  card_image_select:
+    variant: 'primary'
+    src: ''
+    alt: 'Graybox placeholder image'
+    style: 'card'
+    placeholder: true
+  card_type: 'wide'
+  card_color: 'white'
+  card_width: '50'
+  text_alignment: "left"
+  card_link: false
+  card_link_target: ""
+  card_title: 'Card Title'
+  card_text:
+    - '&#8226; white background'
+    - '&#8226; solid blue button'
+    - '&#8226; not a link itself'
+    - '&#8226; left-aligned'
+    - '&#8226; 50% wide'
+    - '&#8226; icon size is medium'
+    - 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+  card_button_text: 'Button Text'
+  card_button_url: 'utc.edu'
+  card_button_style: 'btn--navy'
+  card_button_target: ''
+  card_icon: true
+  card_icon_color: 'blue'
+  card_icon_fa: 'apple-alt'
+  card_icon_size: 'md'
+  card_icon_border: true
+  card_image:
+    variant: ''
+    src: ''
+    alt: ''
+    style: ''
+    placeholder: false
+  card_img_fill: false
+
+utccard_11:
+  card_image_select:
+    variant: 'primary'
+    src: ''
+    alt: 'Graybox placeholder image'
+    style: 'card'
+    placeholder: true
+  card_type: 'wide'
+  card_color: 'lightblue'
+  card_width: '75'
+  text_alignment: "left"
+  card_link: false
+  card_link_target: ""
+  card_title: 'Card Title'
+  card_text:
+    - '&#8226; light blue background'
+    - '&#8226; solid blue button'
+    - '&#8226; not a link itself'
+    - '&#8226; left-aligned'
+    - '&#8226; 75% wide'
+    - '&#8226; icon size is large'
+    - 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+  card_button_text: 'Button Text'
+  card_button_url: 'utc.edu'
+  card_button_style: 'btn--navy'
+  card_button_target: ''
+  card_icon: true
+  card_icon_color: 'blue'
+  card_icon_fa: 'school'
+  card_icon_size: 'lg'
+  card_icon_border: true
+  card_image:
+    variant: ''
+    src: ''
+    alt: ''
+    style: ''
+    placeholder: false
+  card_img_fill: false
+
+utccard_12:
+  card_image_select:
+    variant: 'primary'
+    src: ''
+    alt: 'Graybox placeholder image'
+    style: 'card'
+    placeholder: true
+  card_type: 'wide'
+  card_color: ''
+  card_width: ''
+  text_alignment: "left"
+  card_link: false
+  card_link_target: ""
+  card_title: 'Card Title'
+  card_text:
+    - '&#8226; no background and no shadows'
+    - '&#8226; solid blue button'
+    - '&#8226; not a link itself'
+    - '&#8226; left-aligned'
+    - '&#8226; 100% wide'
+    - '&#8226; icon size is xx-large'
+    - 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+  card_button_text: 'Button Text'
+  card_button_url: 'utc.edu'
+  card_button_style: 'btn--navy'
+  card_button_target: ''
+  card_icon: true
+  card_icon_color: 'yellow'
+  card_icon_fa: 'graduation-cap'
+  card_icon_size: '2x'
+  card_icon_border: true
+  card_image:
+    variant: ''
+    src: ''
+    alt: ''
+    style: ''
+    placeholder: false
+  card_img_fill: false

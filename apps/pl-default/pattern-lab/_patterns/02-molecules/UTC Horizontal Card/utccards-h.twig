@@ -1,0 +1,85 @@
+{#
+/**
+ * @file Cards!
+ *   Documenting @molecules/card/_utccard.twig
+ */
+#}
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+
+{% embed '@demo/_demo-block.twig'
+  with {
+    demo: utccard_demo
+  }
+%}
+  {% block content %}
+      <h4>Cards with Button Links</h4>
+      <div class="my-6">
+        {% include '@molecules/utccard/_utccard.twig' with {
+          utccard: utccard_1
+        } %}
+      </div>
+      <div class="my-6">
+        {% include '@molecules/utccard/_utccard.twig' with {
+          utccard: utccard_2
+        } %}
+      </div>
+      <div class="my-6">
+        {% include '@molecules/utccard/_utccard.twig' with {
+          utccard: utccard_3
+        } %}
+      </div>
+      <hr class="my-12" />
+      <h4>Cards as Links</h4>
+      <div class="my-6">
+        {% include '@molecules/utccard/_utccard.twig' with {
+          utccard: utccard_4
+        } %}
+      </div>
+      <div class="my-6">
+        {% include '@molecules/utccard/_utccard.twig' with {
+          utccard: utccard_5
+        } %}
+      </div>
+      <div class="my-6">
+        {% include '@molecules/utccard/_utccard.twig' with {
+          utccard: utccard_6
+        } %}
+      </div>
+      <hr class="my-12" />
+      <h4>Cards with Vertical Images</h4>
+      <div class="my-6">
+        {% include '@molecules/utccard/_utccard.twig' with {
+          utccard: utccard_7
+        } %}
+      </div>
+      <div class="my-6">
+        {% include '@molecules/utccard/_utccard.twig' with {
+          utccard: utccard_8
+        } %}
+      </div>
+      <div class="my-6">
+        {% include '@molecules/utccard/_utccard.twig' with {
+          utccard: utccard_9
+        } %}
+      </div>
+            <hr class="my-12" />
+      <h4>Cards with FontAwesome Icons</h4>
+      <div class="my-6">
+        {% include '@molecules/utccard/_utccard.twig' with {
+          utccard: utccard_10
+        } %}
+      </div>
+      <div class="my-6">
+        {% include '@molecules/utccard/_utccard.twig' with {
+          utccard: utccard_11
+        } %}
+      </div>
+      <div class="my-6">
+        {% include '@molecules/utccard/_utccard.twig' with {
+          utccard: utccard_12
+        } %}
+      </div>
+    
+  {% endblock content %}
+{% endembed %}
