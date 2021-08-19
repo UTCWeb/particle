@@ -18,14 +18,12 @@ utccard_1:
   text_alignment: "left"
   card_link: false
   card_link_target: ""
-  card_title: 'Card Title'
+  card_title: 'Card Title: White, Left-aligned, 50% Wide'
   card_text:
-    - '&#8226; white background'
     - '&#8226; solid blue button'
     - '&#8226; not a link itself'
     - '&#8226; horizontal image cropped'
-    - '&#8226; left-aligned'
-    - '&#8226; 50% wide'
+    - '&nbsp;'
     - 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
   card_button_text: 'Button Text'
   card_button_url: 'utc.edu'
@@ -57,14 +55,12 @@ utccard_2:
   text_alignment: "center"
   card_link: false
   card_link_target: ""
-  card_title: 'Card Title'
+  card_title: 'Card Title: Light blue, Center-aligned, 75% Wide'
   card_text:
-    - '&#8226; light blue background'
     - '&#8226; outlined blue button'
     - '&#8226; not a link itself'
     - '&#8226; horizontal image'
-    - '&#8226; center-aligned'
-    - '&#8226; 75% wide'
+    - '&nbsp;'
     - 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'    
   card_button_text: 'Button Text'
   card_button_url: 'utc.edu'
@@ -96,14 +92,13 @@ utccard_3:
   text_alignment: "right"
   card_link: false
   card_link_target: ""
-  card_title: 'Card Title'
+  card_title: 'Card Title: No Background, Right-aligned, 100% Wide'
   card_text:
-    - '&#8226; no background and no shadows'
+    - '&#8226; No shadows'
     - '&#8226; yellow button'
     - '&#8226; not a link itself'
-    - '&#8226; horizontal image'
-    - '&#8226; right-aligned'
-    - '&#8226; 100% wide'
+    - '&#8226; horizontal image cropped'
+    - '&nbsp;'
     - 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'   
   card_button_text: 'Button Text'
   card_button_url: 'utc.edu'
@@ -135,14 +130,14 @@ utccard_4:
   text_alignment: "left"
   card_link: true
   card_link_target: ""
-  card_title: 'Card Title'
+  card_title: 'Card Title: Linked Card, No Button'
   card_text:
     - '&#8226; white background'
-    - '&#8226; no button'
     - '&#8226; is a link itself'
     - '&#8226; horizontal image cropped'
     - '&#8226; left-aligned'
     - '&#8226; 50% wide'
+    - '&nbsp;'
     - 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'    
   card_button_text: ''
   card_button_url: ''
@@ -174,14 +169,14 @@ utccard_5:
   text_alignment: "left"
   card_link: true
   card_link_target: ""
-  card_title: 'Card Title'
+  card_title: 'Card Title: Linked Card, No Button'
   card_text:
     - '&#8226; light blue background'
-    - '&#8226; no button'
     - '&#8226; is a link itself'
     - '&#8226; horizontal image'
     - '&#8226; left-aligned'
     - '&#8226; 75% wide'
+    - '&nbsp;'
     - 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'    
   card_button_text: ''
   card_button_url: ''
@@ -213,14 +208,14 @@ utccard_6:
   text_alignment: "left"
   card_link: true
   card_link_target: ""
-  card_title: 'Card Title'
+  card_title: 'Card Title: Linked Card, No Button'
   card_text:
     - '&#8226; no background and no shadows'
-    - '&#8226; no button'
     - '&#8226; is a link itself.'
-    - '&#8226; horizontal image'
+    - '&#8226; horizontal image cropped'
     - '&#8226; left-aligned'
-    - '&#8226; 100% wide'
+    - '&#8226; 100% wide'  
+    - '&nbsp;'
     - 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'    
   card_button_text: ''
   card_button_url: ''
@@ -252,7 +247,7 @@ utccard_7:
   text_alignment: "left"
   card_link: false
   card_link_target: ""
-  card_title: 'Card Title'
+  card_title: 'Card Title: Vertical Image'
   card_text:
     - '&#8226; white background'
     - '&#8226; solid blue button'
@@ -260,6 +255,7 @@ utccard_7:
     - '&#8226; vertical image'
     - '&#8226; left-aligned'
     - '&#8226; 50% width'
+    - '&nbsp;'
     - 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
   card_button_text: 'Button Text'
   card_button_url: 'utc.edu'
@@ -291,7 +287,7 @@ utccard_8:
   text_alignment: "left"
   card_link: false
   card_link_target: ""
-  card_title: 'Card Title'
+  card_title: 'Card Title: Vertical Image'
   card_text:
     - '&#8226; light blue background'
     - '&#8226; outlined blue button'
@@ -299,6 +295,7 @@ utccard_8:
     - '&#8226; vertical image'
     - '&#8226; left-aligned'
     - '&#8226; 75% width'
+    - '&nbsp;'
     - 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'    
   card_button_text: 'Button Text'
   card_button_url: 'utc.edu'
@@ -330,7 +327,7 @@ utccard_9:
   text_alignment: "left"
   card_link: false
   card_link_target: ""
-  card_title: 'Card Title'
+  card_title: 'Card Title: Vertical Image'
   card_text:
     - '&#8226; no background and no shadows'
     - '&#8226; yellow button'
@@ -338,6 +335,7 @@ utccard_9:
     - '&#8226; vertical image'
     - '&#8226; left-aligned'
     - '&#8226; 100% width'
+    - '&nbsp;'
     - 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'   
   card_button_text: 'Button Text'
   card_button_url: 'utc.edu'
@@ -369,7 +367,7 @@ utccard_10:
   text_alignment: "left"
   card_link: false
   card_link_target: ""
-  card_title: 'Card Title'
+  card_title: 'Card Title: FontAwesome Icon'
   card_text:
     - '&#8226; white background'
     - '&#8226; solid blue button'
@@ -377,6 +375,7 @@ utccard_10:
     - '&#8226; left-aligned'
     - '&#8226; 50% wide'
     - '&#8226; icon size is medium'
+    - '&nbsp;'
     - 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
   card_button_text: 'Button Text'
   card_button_url: 'utc.edu'
@@ -408,7 +407,7 @@ utccard_11:
   text_alignment: "left"
   card_link: false
   card_link_target: ""
-  card_title: 'Card Title'
+  card_title: 'Card Title: FontAwesome Icon'
   card_text:
     - '&#8226; light blue background'
     - '&#8226; solid blue button'
@@ -416,6 +415,7 @@ utccard_11:
     - '&#8226; left-aligned'
     - '&#8226; 75% wide'
     - '&#8226; icon size is large'
+    - '&nbsp;'
     - 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
   card_button_text: 'Button Text'
   card_button_url: 'utc.edu'
@@ -447,7 +447,7 @@ utccard_12:
   text_alignment: "left"
   card_link: false
   card_link_target: ""
-  card_title: 'Card Title'
+  card_title: 'Card Title: FontAwesome Icon'
   card_text:
     - '&#8226; no background and no shadows'
     - '&#8226; solid blue button'
@@ -455,6 +455,7 @@ utccard_12:
     - '&#8226; left-aligned'
     - '&#8226; 100% wide'
     - '&#8226; icon size is xx-large'
+    - '&nbsp;'
     - 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
   card_button_text: 'Button Text'
   card_button_url: 'utc.edu'
