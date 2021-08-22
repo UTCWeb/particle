@@ -48,11 +48,10 @@
     'align-middle',
     'select-none',
     'border-0',
-    'py-1.5',
-    'px-3',
-    'text-base',
     'font-semibold',
     button.color ? button.color : 'btn--navy',
+    button.size ? button.size : 'btn--medium',
+    button.radius ? button.radius : 'rounded-none',
   ]
     |merge(button_classes|default([]))
     |join(' ')
