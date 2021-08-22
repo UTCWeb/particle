@@ -1,0 +1,27 @@
+buttons_demo:
+  title: 'Buttons Temp'
+  content:
+    lead: 'Demonstration of UTC Button Sizes.'
+    summary:
+      'Use custom button styles for actions in forms, dialogs, and more with
+      support for multiple sizes, states, and more.'
+
+button_small:
+  text: 'Small'
+  color: 'btn--navy'
+  size: 'btn--small'
+
+button_medium:
+  text: 'Medium'
+  color: 'btn--navy'
+  size: 'btn--medium'
+
+button_large:
+  text: 'Large'
+  color: 'btn--navy'
+  size: 'btn--large'
+  
+button_extralarge:
+  text: 'Extra large'
+  color: 'btn--navy'
+  size: 'btn--extra-large'
