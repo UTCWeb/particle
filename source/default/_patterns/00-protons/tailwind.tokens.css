@@ -14,9 +14,58 @@ Example: Google Remote Fonts
 Serif - Google Fonts - Oswald
 Sans-Serif - Google Fonts - Open Sans
 Monospace - Google Fonts - Source Code Pro
-*/
+*/ 
 
 @import url(https://fonts.googleapis.com/css?family=OpenSans|Oswald|SourceCodePro&display=swap);
+
+
+/* Button Variations */
+@layer components {
+  .btn--navy {
+    @apply bg-utc-new-blue-500 text-white hover:bg-blue-900 hover:text-white focus:shadow-inner;
+  }
+
+  .btn--yellow {
+    @apply bg-utc-new-gold-500 text-utc-new-blue-500 hover:bg-utc-new-gold-600 hover:text-utc-new-blue-500 focus:shadow-inner;
+  }
+
+  .btn--navy-outline {
+    @apply bg-white text-utc-new-blue-500 border-2 border-utc-new-blue-500 hover:bg-utc-new-blue-500 hover:text-white hover:border-utc-new-blue-500 hover:shadow-inner focus:shadow-inner;
+  }
+
+  .btn--lightblue {
+    @apply bg-gray-300 text-utc-new-blue-500 hover:bg-gray-400 hover:text-utc-new-blue-500 focus:shadow-inner;
+  }
+
+  .btn--burgundy {
+    @apply bg-red-900 text-white hover:bg-utc-new-gold-500 hover:text-red-900 focus:shadow-inner;
+  }
+
+  .btn--white-outline {
+   @apply bg-none text-white border-2 border-white hover:bg-utc-new-gold-500 hover:text-utc-new-blue-500 hover:border-white focus:shadow-inner;
+  }
+
+  .btn--green {
+    @apply bg-green-800 text-white hover:bg-green-700
+    hover:text-white focus:shadow-inner;
+  }
+
+  .btn--small {
+    @apply py-1 px-2 text-sm
+  }
+
+  .btn--medium {
+    @apply py-1.5 px-3 text-base;
+  }
+
+  .btn--large {
+   @apply py-2 px-4 text-lg;
+  }
+
+  .btn--extra-large {
+    @apply p-6 text-xl font-bold font-utcheadings;
+   }
+}
 
 /* Temporary workaround until we refactor spacing into tailwind */
 blockquote, dd, dl, figure, h1, h2, h3, h4, h5, h6, hr, p, pre {
@@ -106,3 +155,7 @@ tr {
 
 /* // Makes google custom page index visible
 // This a rare exception as the class is loading through a CDN */
+
+
+
+
