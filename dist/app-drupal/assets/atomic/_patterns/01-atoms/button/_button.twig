@@ -14,25 +14,45 @@
  */
 #}
 
-{% set button_element = button.element|default('button') %}
+{% if button.url %}
 
-{% set button_attributes =
-  button_attributes
-    |default({})
-    |merge({
-      type: button_element != 'a' ? 'button' : 'link'
-    })
-%}
+  {% set button_element = 'a' %}
+  {% set button_attributes =
+    button_attributes
+      |default({})
+      |merge({
+        type: "link",
+        href: button.url,
+        target: button.target,
+        id: button.id,
+      })
+  %}
+
+{% else %}
+
+  {% set button_element = "button" %}
+  {% set button_attributes =
+    button_attributes
+      |default({})
+      |merge({
+        type: 'button',
+      })
+  %}
+
+{% endif %}
 
 {% set button_classes =
   [
-    'py-2',
-    'px-4',
-    'text-white',
-    'font-bold',
-    'rounded',
-    button.color ? button.color : 'bg-blue-500',
-    button.hoverColor ? 'hover:' ~ button.hoverColor : 'hover:bg-blue-700'
+    'inline-block',
+    'text-center',
+    'align-middle',
+    'select-none',
+    'border-0',
+    'py-1.5',
+    'px-3',
+    'text-base',
+    'font-semibold',
+    button.color ? button.color : 'btn--navy',
   ]
     |merge(button_classes|default([]))
     |join(' ')
@@ -41,6 +61,4 @@
 
 <{{button_element}} {{ button_attributes|attributify }} class="{{ button_classes }}">
   {{ button.text }}
-  {% block right %}
-  {% endblock right %}
 </{{button_element}}>
