@@ -1,0 +1,32 @@
+buttons_demo:
+  title: 'Button Colors'
+  content:
+    lead: 'There are several button color options that can be used on light and dark backgrounds.'
+
+button_navy:
+  text: 'Navy Button'
+  color: 'btn--navy'
+
+button_yellow:
+  text: 'Yellow Button'
+  color: 'btn--yellow'
+
+button_green:
+  text: 'Green Button'
+  color: 'btn--green'
+  
+button_navyoutline:
+  text: 'Navy Outline Button'
+  color: 'btn--navy-outline'
+
+button_burgundy:
+  text: 'Burgundy Button'
+  color: 'btn--burgundy'
+
+button_lightblue:
+  text: 'Light Blue Button'
+  color: 'btn--lightblue'
+
+button_whiteoutline:
+  text: 'White Outline Button'
+  color: 'btn--white-outline'
