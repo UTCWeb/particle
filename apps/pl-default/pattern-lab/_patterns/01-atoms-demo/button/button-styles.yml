@@ -4,9 +4,6 @@ buttons_demo:
     lead: '<strong>There are additional button styles available for specific use cases.</strong> 
     <ul>
       <li>Pill: btn--pill</li>
-      <li>Hero Button: btn--medium</li>
-      <li>Large: btn--large</li>
-      <li>Extra Large: btn--extra-large</li>
     </ul>'
 
 button_small_pill:
