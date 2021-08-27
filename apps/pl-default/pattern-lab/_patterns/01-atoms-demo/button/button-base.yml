@@ -1,0 +1,21 @@
+buttons_demo:
+  title: 'Button Display'
+  content:
+    lead: '<strong>A button may:</strong>
+    <ul>
+      <li>Be an inline interactive element to help the user accomplish a task (e.g. form submission or navigation).</li> 
+      <li>A link styled as a button (e.g. when linking to a new page).</li>
+</li>'
+
+button_inline:
+  text: 'Inline Button'
+  color: 'btn--navy'
+  url: 'https://www.utc.edu/'
+  target: '_blank'
+
+
+button_block:
+  text: 'Full Width Block Button'
+  color: 'btn--navy'
+  display: 'btn--block'
+  type: 'button'

@@ -21,7 +21,6 @@
     button_attributes
       |default({})
       |merge({
-        type: "link",
         href: button.url,
         target: button.target,
         id: button.id,
@@ -35,7 +34,7 @@
     button_attributes
       |default({})
       |merge({
-        type: 'button',
+        type: button.type ? button.type :'button',
       })
   %}
 
@@ -43,12 +42,8 @@
 
 {% set button_classes =
   [
-    'inline-block',
-    'text-center',
-    'align-middle',
-    'select-none',
-    'border-0',
-    'font-semibold',
+    'btn',
+    button.display ? button.display : 'inline-block',
     button.color ? button.color : 'btn--navy',
     button.size ? button.size : 'btn--medium',
     button.radius ? button.radius : 'rounded-none',

@@ -1,7 +1,13 @@
 buttons_demo:
-  title: 'Button Sizes'
+  title: 'Button Sizes and Styles'
   content:
-    lead: 'There are four button sizes available. Extra-large buttons are primarily for use in button groups.'
+    lead: '<strong>There are four button sizes available:</strong> 
+    <ul>
+      <li>Small: btn--small</li>
+      <li>Medium: btn--medium</li>
+      <li>Large: btn--large</li>
+      <li>Extra Large: btn--extra-large</li>
+    </ul>'
 
 button_small:
   text: 'Small'

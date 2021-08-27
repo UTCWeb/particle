@@ -5,24 +5,18 @@
  *
  */
 #}
-
 {% embed '@demo/_demo-block.twig'
   with {
     demo: buttons_demo
   }
 %}
+
   {% block content %}
     {% include '@atoms/button/_button.twig' with {
-      button: button_small
-    } only %}
-      {% include '@atoms/button/_button.twig' with {
-      button: button_medium
+      button: button_inline
     } only %}
     {% include '@atoms/button/_button.twig' with {
-      button: button_large
-    } only %}
-    {% include '@atoms/button/_button.twig' with {
-      button: button_extralarge
+      button: button_block
     } only %}
   {% endblock content %}
 {% endembed %} 

@@ -1,6 +1,9 @@
-import './buttons.twig';
-import './buttons-size.yml';
-import './buttons-size.twig';
-import './buttons.yml';
-import './buttons~colors.yml';
+import './button-base.twig';
+import './button-base.yml';
+import './button-styles.twig';
+import './button-styles.yml';
+import './button-sizes.yml';
+import './button-sizes.twig';
+import './button-colors.yml';
+import './button-colors.twig';
 
