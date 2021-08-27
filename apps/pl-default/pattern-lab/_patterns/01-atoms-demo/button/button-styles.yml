@@ -1,0 +1,28 @@
+buttons_demo:
+  title: 'Button Styles'
+  content:
+    lead: '<strong>There are additional button styles available for specific use cases.</strong> 
+    <ul>
+      <li>Pill: btn--pill</li>
+      <li>Hero Button: btn--medium</li>
+      <li>Large: btn--large</li>
+      <li>Extra Large: btn--extra-large</li>
+    </ul>'
+
+button_small_pill:
+  text: 'Small Pill'
+  color: 'btn--navy-outline'
+  size: 'btn--small'
+  radius: 'btn--pill'
+
+button_medium_pill:
+  text: 'Medium Pill'
+  color: 'btn--navy-outline'
+  size: 'btn--medium'
+  radius: 'btn--pill'
+
+button_large_pill:
+  text: 'Large Pill'
+  color: 'btn--navy-outline'
+  size: 'btn--large'
+  radius: 'btn--pill'
