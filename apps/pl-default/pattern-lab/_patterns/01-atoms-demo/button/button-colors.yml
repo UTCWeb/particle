@@ -1,7 +1,16 @@
 buttons_demo:
   title: 'Button Colors'
   content:
-    lead: 'There are several button color options that can be used on light and dark backgrounds.'
+    lead: '<strong>There are several button color options that can be used on light and dark backgrounds:</strong>
+      <ul>
+        <li>Navy: btn--navy</li>
+        <li>Yellow: btn--yellow</li>
+        <li>Green: btn--green</li>
+        <li>Navy Outline: btn--navy-outline</li>
+        <li>Burgundy: btn--burgundy</li>
+        <li>Light Blue: btn--lightblue</li>
+        <li>White Outline: btn--white-outline</li>
+      </ul>'
 
 button_navy:
   text: 'Navy Button'
