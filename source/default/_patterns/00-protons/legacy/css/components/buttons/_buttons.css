@@ -180,13 +180,13 @@
   display: block;
   width: 100%;
 }
-*/
+
 
 .btn--pill {
   border-radius: 24px;
 }
 
-/* Button Sizes */
+/* Button Sizes
 .btn--small,
 .btn-sm {
   padding: 0.25rem 0.5rem;
@@ -207,6 +207,7 @@
   font-weight: 700;
   font-family: 'Exo', 'Helvetica Neue', sans-serif;
 }
+*/
 
 a.button_cta_custom {
   width: 100%;
