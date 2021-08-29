@@ -22,7 +22,7 @@ Monospace - Google Fonts - Source Code Pro
 /* Button Variations */
 @layer components {
   .btn {
-    @apply text-center align-middle select-none mb-4 font-bold py-1.5 px-3 text-base;
+    @apply text-center align-middle select-none mb-4 font-bold py-1.5 px-3 text-base inline-block;
   }
   .btn--navy,
   .btn-primary,
