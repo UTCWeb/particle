@@ -3,8 +3,16 @@ buttons_demo:
   content:
     lead: '<strong>A button may:</strong>
     <ul>
-      <li>Be an inline interactive element to help the user accomplish a task (e.g. form submission or navigation).</li> 
-      <li>A link styled as a button (e.g. when linking to a new page).</li>
+      <li>Be an inline interactive element to help the user accomplish a task (e.g. form submission or navigation).
+        <ul>
+        <li>url:</li>
+        <li>target:</li>
+      </ul> 
+      <li>A link styled as a button (e.g. when linking to a new page).
+        <ul>
+        <li>type: button</li>
+      </ul> 
+      </li>
 </li>'
 
 button_inline:
