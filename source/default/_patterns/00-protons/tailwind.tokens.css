@@ -85,7 +85,7 @@ Monospace - Google Fonts - Source Code Pro
    }
 
    .btn--pill {
-     @apply rounded-xl;
+     @apply rounded-3xl;
    }
 }
 
