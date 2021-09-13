@@ -23,7 +23,7 @@ Monospace - Google Fonts - Source Code Pro
 /* Button Variations */
 @layer components {
   .btn {
-    @apply text-center align-middle select-none mb-4 font-bold py-1.5 px-4 text-base inline-block transition duration-500 hover:shadow-md;
+    @apply text-center align-middle select-none mb-4 font-semibold py-1.5 px-4 text-base inline-block transition duration-500 hover:shadow-md;
   }
   .btn--navy,
   .btn-primary,
