@@ -65,7 +65,8 @@ Monospace - Google Fonts - Source Code Pro
     hover:text-white hover:border-green-700 focus:shadow-inner;
   }
 
-  .btn--small {
+  .btn--small,
+  .btn-sm {
     @apply py-1 px-3 text-sm
   }
 
@@ -73,7 +74,8 @@ Monospace - Google Fonts - Source Code Pro
     @apply py-1.5 px-4 text-base;
   }
 
-  .btn--large {
+  .btn--large,
+  .btn-lg {
    @apply py-2 px-5 text-lg;
   }
 
