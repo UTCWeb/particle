@@ -1,3 +1,11 @@
+<<<<<<< Updated upstream
+=======
+.parallax-drone {
+  background-image: url("images/parallax-drone.jpg");
+  @apply bg-fixed bg-center bg-no-repeat bg-cover min-h-33 py-24;
+}
+
+>>>>>>> Stashed changes
 .parallax-cadek {
   background-image: url("images/parallax-cadek.jpg");
   @apply bg-fixed bg-center bg-no-repeat bg-cover min-h-33 py-24;
@@ -62,3 +70,7 @@
   background-image: url("images/parallax-sunset.jpg");
   @apply bg-fixed bg-center bg-no-repeat bg-cover min-h-33 py-24;
 }
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
