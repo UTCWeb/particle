@@ -44,7 +44,9 @@ module.exports = {
       }
     },
     minHeight: {
-      '23': '23rem'
+      '23': '23rem',
+      '33': '33rem',
+      '43': '43rem',
     }
   },
   variants: {
