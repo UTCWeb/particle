@@ -1,0 +1,70 @@
+.parallax-drone {
+  background-image: url("images/parallax-drone.jpg");
+  @apply bg-fixed bg-center bg-no-repeat bg-cover min-h-33 py-24;
+}
+
+.parallax-cadek {
+  background-image: url("images/parallax-cadek.jpg");
+  @apply bg-fixed bg-center bg-no-repeat bg-cover min-h-33 py-24;
+}
+
+.parallax-chamberlain {
+  background-image: url("images/parallax-chamberlain.jpg");
+  @apply bg-fixed bg-center bg-no-repeat bg-cover min-h-33 py-24;
+}
+
+.parallax-derthick {
+  background-image: url("images/parallax-derthick.jpg");
+  @apply bg-fixed bg-center bg-no-repeat bg-cover min-h-33 py-24;
+}
+
+.parallax-fine-arts-center {
+  background-image: url("images/parallax-fine-arts-center.jpg");
+  @apply bg-fixed bg-center bg-no-repeat bg-cover min-h-33 py-24;
+}
+
+.parallax-founders {
+  background-image: url("images/parallax-founders.jpg");
+  @apply bg-fixed bg-center bg-no-repeat bg-cover min-h-33 py-24;
+}
+
+.parallax-fountain {
+  background-image: url("images/parallax-fountain.jpg");
+  @apply bg-fixed bg-center bg-no-repeat bg-cover min-h-33 py-24;
+}
+
+.parallax-hooper-race {
+  background-image: url("images/parallax-hooper-race.jpg");
+  @apply bg-fixed bg-center bg-no-repeat bg-cover min-h-33 py-24;
+}
+
+.parallax-hydrangea {
+  background-image: url("images/parallax-hydrangea.jpg");
+  @apply bg-fixed bg-center bg-no-repeat bg-cover min-h-33 py-24;
+}
+
+.parallax-memorial-gate {
+  background-image: url("images/parallax-memorial-gate.jpg");
+  @apply bg-fixed bg-center bg-no-repeat bg-cover min-h-33 py-24;
+}
+
+.parallax-mockingbird-1 {
+  background-image: url("images/parallax-mockingbird-1.jpg");
+  @apply bg-fixed bg-center bg-no-repeat bg-cover min-h-33 py-24;
+}
+
+.parallax-mockingbird-2 {
+  background-image: url("images/parallax-mockingbird-2.jpg");
+  @apply bg-fixed bg-center bg-no-repeat bg-cover min-h-33 py-24;
+}
+
+.parallax-power-c {
+  background-image: url("images/parallax-power-c.jpg");
+  @apply bg-fixed bg-center bg-no-repeat bg-cover min-h-33 py-24;
+}
+
+.parallax-sunset {
+  background-image: url("images/parallax-sunset.jpg");
+  @apply bg-fixed bg-center bg-no-repeat bg-cover min-h-33 py-24;
+}
+
