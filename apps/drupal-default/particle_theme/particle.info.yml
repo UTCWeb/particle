@@ -1,7 +1,7 @@
 name: Particle
 type: theme
 description: A Theme with Pattern Lab
-base theme: themag
+base theme: classy
 core_version_requirement: ^8.8 || ^9
 libraries:
   - particle/core

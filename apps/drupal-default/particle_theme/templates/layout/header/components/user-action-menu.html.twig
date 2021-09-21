@@ -1,0 +1,29 @@
+{# Header user action menu #}
+
+<div class="header__user-nav">
+  <div class="d-flex">
+    {% if particle.header_user_icon %}
+      {% include '@particle/layout/header/components/toggleable-account-menu.html.twig' %}
+    {% endif %}
+
+    {% if particle.header_search_icon and (particle.modules.search or particle.modules.search_api) %}
+      {% if particle.header_search_icon_as_link %}
+        <a class="header__toggleable-button" href="{{ particle.search_page_path }}">
+          <i class="fas fa-search"></i>
+        </a>
+      {% else %}
+        <button class="header__toggleable-button js-toggle-search">
+          <i class="fas fa-search"></i>
+        </button>
+      {% endif %}
+    {% endif %}
+
+    {% if particle.header_cart_icon and particle.modules.commerce_cart %}
+     {{ particle.commerce.commerce_cart_block }}
+    {% endif %}
+  </div>
+
+  <button class="header__toggleable-button toggle-offcanvas-sidebar js-toggle-offcanvas-sidebar">
+    <i class="fas fa-bars"></i>
+  </button>
+</div>

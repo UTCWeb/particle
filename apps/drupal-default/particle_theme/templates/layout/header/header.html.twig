@@ -1,0 +1,27 @@
+{% block top_bar %}
+  {% if page.top_bar_first or page.top_bar_second %}
+    <div class="utc-top-bar">
+          {% if page.top_bar_first %}
+            <div>{{ page.top_bar_first }}</div>
+          {% endif %}
+          {% if page.top_bar_second %}
+          <div>{{ page.top_bar_second }}</div>
+          {% endif %}
+    </div>
+  {% endif %}
+{% endblock %}
+
+<div class="header-container header-container--{{ particle.header_style|clean_class }} js-page-header">
+  {% if particle.header_style == 'header_a' %}
+    {% include '@particle/layout/header/header-a.html.twig' %}
+  {% elseif particle.header_style == 'header_b' %}
+    {% include '@particle/layout/header/header-b.html.twig' %}
+  {% elseif particle.header_style == 'header_c' %}
+    {% include '@particle/layout/header/header-c.html.twig' %}
+  {% elseif particle.header_style == 'header_d' %}
+    {% include '@particle/layout/header/header-d.html.twig' %}
+  {% elseif particle.header_style == 'custom_header' %}
+    {% include '@particle/layout/header/custom-header.html.twig' %}
+  {% endif %}
+   {% include '@particle/layout/header/custom-header.html.twig' %}
+</div>
