@@ -9,6 +9,8 @@ import './tailwind.tokens.css';
 //Legacy CSS
 import './legacy/css/footer.css';
 import './legacy/css/global.css';
+import './legacy/css/themagcss/themag.css';
+// import './legacy/css/themag.css';
 import './legacy/css/utc-sidebar-menu.css';
 import './legacy/css/utc-offcanvas-sidebar-menu.css';
 import './legacy/css/utc_department_info.css';
