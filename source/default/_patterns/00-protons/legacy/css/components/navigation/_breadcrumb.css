@@ -30,8 +30,12 @@
 	display: none;
 }
 .block--system-breadcrumb-block {
-    margin-top: -2rem;
+    margin-top: .5rem;
+	margin-bottom: 1.5rem;
 }
+/*this is a reverse of the themag_layout custom module css class in section.css*/
+.themag-layout--my-default{margin-bottom:0rem!important}
+
 @media (max-width: 768px) {
 	.breadcrumb ol,
   .simple-breadcrumb ol {
