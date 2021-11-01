@@ -40,7 +40,6 @@ import './legacy/css/information-technology/_midpagewidget.css';
 import './legacy/css/digital_measures/tabbed.css';
 import './legacy/css/pages/utc_homepages_options.css';
 import './legacy/css/pages/utc_error_pages.css';
-import './legacy/css/components/UTC-custom-blocks/_utc_hover_images.css';
 // import "./legacy/css/components/UTC-custom-blocks/";
 // import "./legacy/css/components/field/";
 
@@ -48,7 +47,6 @@ import './legacy/css/components/UTC-custom-blocks/_utc_hover_images.css';
 //Legacy JS
 import './legacy/js/utc-sidebar-menu.js';
 import './legacy/js/slick-custom-arrows.js';
-import './legacy/js/utc-hover-images.js';
 // import './legacy/js/ckeditor-jquery.js';
 
 // Export global variables.
