@@ -39,7 +39,7 @@
     margin-bottom: 1.5rem;
 }
 
-/*this is an override of the themag_layout custom module css class in section.css and is applied only to certain content types*/
+/*Override the themag_layout custom module css class in section.css and is applied only to certain content types*/
 .page-node-type-utc-academic-homepage .themag-layout--my-default,
 .page-node-type-utc-admin-homepage .themag-layout--my-default,
 .page-node-type-utc-academic-internal-page .themag-layout--my-default,
