@@ -30,23 +30,6 @@
 	display: none;
 }
 
-/*adjust the breadcrumb spacing and apply this only to specific content types */
-.page-node-type-utc-academic-homepage .block--system-breadcrumb-block,
-.page-node-type-utc-admin-homepage .block--system-breadcrumb-block,
-.page-node-type-utc-academic-internal-page .block--system-breadcrumb-block,
-.page-node-type-utc-admin-internal-page .block--system-breadcrumb-block {
-    margin-top: .5rem;
-    margin-bottom: 1.5rem;
-}
-
-/*Override the themag_layout custom module css class in section.css and is applied only to certain content types*/
-.page-node-type-utc-academic-homepage .themag-layout--my-default,
-.page-node-type-utc-admin-homepage .themag-layout--my-default,
-.page-node-type-utc-academic-internal-page .themag-layout--my-default,
-.page-node-type-utc-admin-internal-page .themag-layout--my-default {
-    margin-bottom:0rem!important
-}
-
 @media (max-width: 768px) {
 	.breadcrumb ol,
   .simple-breadcrumb ol {
