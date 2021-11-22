@@ -30,7 +30,7 @@
 	display: none;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 768px) {
 	.breadcrumb ol,
   .simple-breadcrumb ol {
 		display: grid;
