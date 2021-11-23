@@ -68,7 +68,7 @@
         {% endif %}
         <ul class="flex flex-row flex-wrap list-none pl-0 mb-0">
           {% for content in info_1.0['#icons'] if info_1.0['#icons'] is not empty %}
-            <li class="p-10 text-lg text-center xl:w-1/2 w-full {{ description_color }}">
+            <li class="p-5 text-lg text-center xl:w-1/2 w-full {{ description_color }}">
               {% if info_1.0['#icons'][loop.index0]['#name'] != 'fa-' %}
                 <div class="mb-4 {{ icon_color }}"><span
                     class="{{ info_1.0['#icons'][loop.index0]['#style'] }} fa-3x {{ info_1.0['#icons'][loop.index0]['#name'] }}"></span>
