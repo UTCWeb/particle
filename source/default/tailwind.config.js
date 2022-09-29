@@ -47,6 +47,9 @@ module.exports = {
         'utchero': '1fr 60% 35% 1fr',
         'utcheroright': '1fr 35% 60% 1fr',
         'utcherocenter': '1fr 45% 45% 1fr',
+        'utcvideohero': '1fr 30%',
+        'utcvideoheroright': '30% 1fr',
+        'utcvideoherocenter': '15% 1fr 15%',
         // Adds a custom template for the highlight block
         'utchighlight': '1fr 45% 40% 1fr',
         //Adds custom template for the footer menu/map columns

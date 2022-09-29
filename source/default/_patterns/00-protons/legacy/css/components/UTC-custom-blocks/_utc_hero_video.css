@@ -1,0 +1,63 @@
+
+/*@media (min-width: 768px) {
+    #video-hero.youtube {
+        padding-bottom: 56.25%;
+    }
+}
+@media (min-width: 1024px) {
+    #video-hero.youtube {
+        padding-bottom: 56.25%;
+    }
+}
+@media (min-width: 1280px) {
+    #video-hero.youtube {
+        padding-bottom: 56.25%;
+    }
+}
+@media (min-width: 1600px) {
+    #video-hero.youtube {
+        padding-bottom: 56.25%;
+    }
+}
+@media (min-width: 1920px) {
+    #video-hero.youtube {
+        min-width: 1120px;
+    }
+}
+
+#video-hero.youtube {
+    
+    padding-bottom: 56.25%;
+}
+
+
+#video-hero.youtube {
+    min-width: 1120px;
+    padding-bottom: 56.25%;
+}
+
+
+#video-hero.youtube {
+    min-width: 1120px;
+    padding-bottom: 56.25%;
+}*/
+.section--utc-video-hero {margin-bottom:6rem!important}
+.block--utc-video-hero {margin-bottom:-72px;}
+.video-hero.youtube { @apply relative h-0 overflow-hidden max-w-full;padding-bottom: 56.25%; } 
+.video-hero.youtube iframe, 
+.video-hero.youtube object, 
+.video-hero.youtube embed { @apply absolute top-0 left-0 w-full h-full; }
+
+.block--utc-video-hero a.diagonal {
+    @apply border border-white text-white bg-transparent mx-auto py-3 px-4 font-bold;
+    background-image: -webkit-linear-gradient(257deg, #fff 50%, transparent 50%);
+    background-image: linear-gradient(-257deg, #fff 50%, transparent 50%);
+    background-position: 100%;
+    background-size: 400%;
+    -webkit-transition: all 750ms ease-in-out;
+    transition: all 750ms ease-in-out;
+}
+.block--utc-video-hero a.diagonal:hover {
+    background-position: 0;
+    @apply text-utc-new-blue-500;
+}
