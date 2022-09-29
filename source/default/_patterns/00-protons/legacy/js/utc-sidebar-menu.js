@@ -26,7 +26,6 @@
                 $(this).removeClass('closed').addClass('open');
                 $(this).parent().addClass('open');
             });
-
         }
     };
 }(jQuery, Drupal, drupalSettings));
