@@ -6,12 +6,12 @@
 import importAll from '../../tools/webpack/import-all';
 
 // PL meta
-import './pattern-lab/_meta/_00-head.twig';
-import './pattern-lab/_meta/_01-foot.twig';
+import './pattern-lab/_meta/_head.twig';
+import './pattern-lab/_meta/_foot.twig';
 
 // Watch all demo folders in source
 const demoSystem = importAll(
-  require.context('./pattern-lab/_patterns', true, /index\.js$/)
+    require.context('./pattern-lab/_patterns', true, /index\.js$/)
 );
 
 // Watch all files in the source/_data folder
