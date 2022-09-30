@@ -17,6 +17,7 @@
 	'block--inline-block:utc-hero-video',
 	'block--utc-video-hero',
     'block--utc-video-hero-full',
+	'p-16',
   ]
 %}
 <div{{ attributes.addClass(classes) }}>
@@ -53,6 +54,7 @@
 			{% set tag_color = 'lg:text-white' %}
 			{% set btn_border_color = "lg:border-white" %}
 			{% set bg_color = 'background-color:#112e51' %}
+			{% set btn_class = "default" %}
 			{% set bg1_opacity = '' %}
 			{% set bg2_opacity = 'opacity-90' %}
 		{% else %}
@@ -60,35 +62,29 @@
 			{% set body_color = 'text-base' %}
 			{% set tag_color = 'text-base' %}
 			{% set btn_border_color = "lg:border-utc-new-blue-500" %}
+			{% set btn_class = "light-gray-hero" %}
 			{% set bg_color = 'background-color:#104dd4' %}
 			{% set bg1_opacity = 'opacity-20' %}
 			{% set bg2_opacity = 'opacity-20' %}
 		{% endif %}
 		
 		{% block herobackground %}
-			<div class="absolute left-0 top-0 w-full h-full {{ bg1_opacity }} bg-cover bg-center" style="background-image: url({{ utc_hero.hero_bg }})">
-				<div class="h-full w-full {{ bg2_opacity }}" style="{{ bg_color }}"></div>
+			<div class="absolute left-0 top-0 w-full h-80p {{ bg1_opacity }} bg-cover bg-center" style="background-image: url({{ utc_hero.hero_bg }})">
+				<div class="hero-background-color h-full w-full {{ bg2_opacity }}" style="{{ bg_color }}"></div>
 			</div>
 		{% endblock herobackground %}
 
 		{# image on left #}	
 		{% if utc_hero.hero_align == 'Left' %}
-			<div class="utc-video-hero-block-left z-10 grid grid-cols-utcvideohero gap-10 p-16 pb-0 relative ">
-				{% if utc_hero.hero_video %}
+			<div class="utc-video-hero-block-left z-10 grid grid-cols-utcvideohero gap-10 relative ">
 					<div>
 						<div class="video-hero pointer-events-none cursor-none">{{ utc_hero.hero_video }}</div>
 					</div>
-				{% endif %}
-				<div class="flex flex-col justify-center" style="margin-top:-72px;">
+				<div class="flex flex-col justify-center h-80p">
 		{% else %}
 		{# image on right #}	
-			<div class="utc-video-hero-block-right z-10 grid grid-cols-utcvideoheroright gap-10 p-16 pb-0 relative ">
-				{% if utc_hero.hero_video %}
-					<div>
-						<div class="video-hero pointer-events-none cursor-none">{{ utc_hero.hero_video }}</div>
-					</div>
-				{% endif %}
-				<div class="flex flex-col justify-center" style="margin-top:-150px;">
+			<div class="utc-video-hero-block-right z-10 grid grid-cols-utcvideoheroright gap-10 relative ">
+				<div class="flex flex-col justify-center h-80p">
 		{% endif %}
 		{% block herocontent %}
 			{% block herotagtitle %}
@@ -112,7 +108,7 @@
 			{% endif %}
 			{% if utc_hero.hero_button_url %}
 					<p class="my-6 text-right">
-						<a href="{{ utc_hero.hero_button_url}}" class="diagonal" aria-label="{{ utc_hero.hero_button_text }}">
+						<a href="{{ utc_hero.hero_button_url}}" class="diagonal {{ btn_class }}" aria-label="{{ utc_hero.hero_button_text }}">
 							{{ utc_hero.hero_button_text }} <i class="fas fa-angle-right text-utc-new-gold-500 font-semibold ml-1"></i>
 						</a>
 					</p>
@@ -120,6 +116,11 @@
 			{% endblock herotextbutton %}
 		{% endblock herocontent %}
 				</div>
+			{% if utc_hero.hero_align == 'Right' %}
+				<div>
+					<div class="video-hero pointer-events-none cursor-none">{{ utc_hero.hero_video }}</div>
+				</div>
+			{% endif %}
 			</div>
 	{% endblock %}
 </div>
