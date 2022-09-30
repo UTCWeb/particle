@@ -21,6 +21,7 @@ module.exports = {
                         postcssOptions: {
                             // config: {
                             config: path.join('postcss.config.js'),
+                            ctx: { tailwindConfig: path.resolve(__dirname, 'tailwind.config.js'), },
                             // ctx: {
                             //     // PostCSS Tailwind config
                             //     tailwindConfig: path.resolve(__dirname, 'tailwind.config.js'),

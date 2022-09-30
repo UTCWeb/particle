@@ -48,7 +48,7 @@ module.exports = {
                 use: [{
                         loader: 'css-loader',
                         options: {
-                            sourceMap: false,
+                            sourceMap: true,
                         },
                     },
                     {
@@ -65,7 +65,7 @@ module.exports = {
                             postcssOptions: {
                                 ident: 'postcss',
                             },
-                            sourceMap: false,
+                            sourceMap: true,
                         },
                     },
                 ],
