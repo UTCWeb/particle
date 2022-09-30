@@ -47,9 +47,9 @@ module.exports = {
         'utchero': '1fr 60% 35% 1fr',
         'utcheroright': '1fr 35% 60% 1fr',
         'utcherocenter': '1fr 45% 45% 1fr',
-        'utcvideohero': '1fr 30%',
-        'utcvideoheroright': '30% 1fr',
-        'utcvideoherocenter': '15% 1fr 15%',
+        'utcvideohero': '1fr 25%',
+        'utcvideoheroright': '25% 1fr',
+        'utcvideoherocenter': '1fr 90% 1fr',
         // Adds a custom template for the highlight block
         'utchighlight': '1fr 45% 40% 1fr',
         //Adds custom template for the footer menu/map columns
@@ -80,6 +80,10 @@ module.exports = {
         '70p': '70%',
         '75p': '75%',
         '80p': '80%',
+        '85p': '85%',
+        '90p': '90%',
+        '95p': '95%',
+        'full': '100%',
       }
     },
     minHeight: {
