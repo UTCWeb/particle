@@ -112,3 +112,9 @@
         @apply pb-8;
     }
 }
+@media screen and (max-height: 420px) and (orientation:landscape){
+    .utc-video-hero-container {
+        max-width: 80%!important;
+        margin: 0 auto!important;
+    }
+}

@@ -17,6 +17,7 @@
 	'block--inline-block:utc-hero-video',
 	'block--utc-video-hero',
     'block--utc-video-hero-full',
+	'shadow-utc',
   ]
 %}
 <div{{ attributes.addClass(classes) }}>
@@ -72,7 +73,7 @@
 				<div class="video-hero-wrapper w-full h-full px-8 pt-8 lg:pt-8 relative">
 					<span class="absolute left-0 top-0 right-0 bottom-0 {{ bg1_opacity }} bg-cover bg-center" style="background-image: url({{ utc_hero.hero_bg }})"></span>
 					<div class="absolute left-0 top-0 hero-background-color h-full w-full {{ bg2_opacity }}" style="{{ bg_color }}"></div>
-					<div class="utc-video-hero-block-left flex flex-col lg:grid lg:grid-cols-utcvideohero lg:gap-10 relative ">
+					<div class="utc-video-hero-container utc-video-hero-block-left flex flex-col lg:grid lg:grid-cols-utcvideohero lg:gap-10 relative ">
 						<div>
 							<div class="video-hero lg:pointer-events-none lg:cursor-none">{{ utc_hero.hero_video }}</div>
 						</div>
@@ -110,7 +111,7 @@
 				<div class="video-hero-wrapper w-full h-full px-8 pt-8 relative">
 					<span class="absolute left-0 top-0 right-0 bottom-0 {{ bg1_opacity }} bg-cover bg-center" style="background-image: url({{ utc_hero.hero_bg }})"></span>
 					<div class="absolute left-0 top-0 hero-background-color h-full w-full" style="{{ bg2_opacity }};{{ bg_color }}"></div>
-					<div class="utc-video-hero-block-right flex flex-col-reverse lg:grid lg:grid-cols-utcvideoheroright lg:gap-10 relative ">
+					<div class="utc-video-hero-container utc-video-hero-block-right flex flex-col-reverse lg:grid lg:grid-cols-utcvideoheroright lg:gap-10 relative ">
 						<div class="flex flex-col justify-center shrink relative">
 							{% if utc_hero.hero_tag %}
 								<p class="text-left font-semibold tracking-wide uppercase text-lg mb-0 mt-4 {{ tag_color }} lg:whitespace-nowrap">
