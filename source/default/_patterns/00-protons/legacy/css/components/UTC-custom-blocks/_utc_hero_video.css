@@ -1,46 +1,8 @@
-
-/*@media (min-width: 768px) {
-    #video-hero.youtube {
-        padding-bottom: 56.25%;
-    }
-}
-@media (min-width: 1024px) {
-    #video-hero.youtube {
-        padding-bottom: 56.25%;
-    }
-}
-@media (min-width: 1280px) {
-    #video-hero.youtube {
-        padding-bottom: 56.25%;
-    }
-}
-@media (min-width: 1600px) {
-    #video-hero.youtube {
-        padding-bottom: 56.25%;
-    }
-}
-@media (min-width: 1920px) {
-    #video-hero.youtube {
-        min-width: 1120px;
-    }
-}
-
-#video-hero.youtube {
-    
-    padding-bottom: 56.25%;
+div[role="contentinfo"] {
+    display: none;
 }
 
 
-#video-hero.youtube {
-    min-width: 1120px;
-    padding-bottom: 56.25%;
-}
-
-
-#video-hero.youtube {
-    min-width: 1120px;
-    padding-bottom: 56.25%;
-}*/
 .main-reduce-top-margin {padding-top:0!important;}
 .section-container--utc-video-hero,
 .section-container--utc-video-hero .container-full,
