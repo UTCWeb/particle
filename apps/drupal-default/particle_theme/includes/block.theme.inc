@@ -8,6 +8,7 @@ use Drupal\node\NodeInterface;
 use Drupal\media\Entity\Media;
 use Drupal\media_entity\MediaInterface;
 use Drupal\file\Entity\File;
+use Drupal\Component\Utility\Html;
 
 /**
  * Implements hook_theme_suggestions_block_alter().
@@ -70,5 +71,43 @@ function particle_preprocess_block(&$variables)
             $variables['field_utc_department_phone'][$index] = $content[$index]['#block_content']->get('field_utc_department_phone')->view('url');
         }
     }
+    if ($variables['plugin_id'] == 'inline_block:utc_wpblogs') {
+        $content = $variables['elements']['content']; //field_utcwp_categoriesid //field_utcwp_itemsperpage
+        //  dd($content['#block_content']->field_utc_wpblogs->value);
+        // dd($content['#block_content']->field_utcwp_itemsperpage->value);
+        $id = Html::getUniqueId('utcmocsync');
+        $variables['#attached'] = [
+            'drupalSettings' => [
+              'utc_wpblogdrupalsettings' => [ 
+                $id => [
+                'utcwp_blogs' => $content['#block_content']->field_utc_wpblogs->value ?? 'blank',
+                'utcwp_categoriesid' => $content['#block_content']->field_utcwp_categoriesid->value ?? 'blank',
+                'utcwp_itemsperpage' => $content['#block_content']->field_utcwp_itemsperpage->value ?? 'blank',
+                    ],
+                ],
+            ],
+        ];
+        $variables['#attached']['library'][] = 'utccloud/utc-wpblogsfeed'; 
+        $variables['#attached']['library'][] = 'utccloud/utc-wpblogsfeedsvelte'; 
+            //         {{ attach_library('utccloud/utc-wpblogsfeed') }}
+            // {{ attach_library('utccloud/utc-wpblogsfeedsvelte') }}
+                    // \Drupal::messenger()->addStatus('Successful message.');
+    }
 
 }
+
+function particle_block_build_alter(array &$build, \Drupal\Core\Block\BlockPluginInterface $block) {
+    \Drupal::messenger()->addStatus('Successful message.');
+    // Adds exra info if the plugin ID matches.
+    die($block->label());
+    if ($block->getPluginId() === 'inline_block:utc_wpblogs') {
+        die('sucess'); 
+    //   $build['#cache']['contexts'][] = 'user';
+    }
+  }
+
+// function hook_block_build_BASE_BLOCK_ID_alter(array &$build, \Drupal\Core\Block\BlockPluginInterface $block) {
+//     // inline_block:utc_wpblogs
+//     // Explicitly enable placeholdering of the specific block.
+//     $build['#create_placeholder'] = TRUE;
+//   }
