@@ -75,7 +75,9 @@ function particle_preprocess_block(&$variables)
         $content = $variables['elements']['content']; //field_utcwp_categoriesid //field_utcwp_itemsperpage
         //  dd($content['#block_content']->field_utc_wpblogs->value);
         // dd($content['#block_content']->field_utcwp_itemsperpage->value);
+        if()
         $id = Html::getUniqueId('utcmocsync');
+        
         $variables['#attached'] = [
             'drupalSettings' => [
               'utc_wpblogdrupalsettings' => [ 
@@ -89,6 +91,8 @@ function particle_preprocess_block(&$variables)
         ];
         $variables['#attached']['library'][] = 'utccloud/utc-wpblogsfeed'; 
         $variables['#attached']['library'][] = 'utccloud/utc-wpblogsfeedsvelte'; 
+
+        dd($variables);
             //         {{ attach_library('utccloud/utc-wpblogsfeed') }}
             // {{ attach_library('utccloud/utc-wpblogsfeedsvelte') }}
                     // \Drupal::messenger()->addStatus('Successful message.');
