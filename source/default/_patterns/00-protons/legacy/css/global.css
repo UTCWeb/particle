@@ -338,15 +338,16 @@ h2 a, h3 a, h4 a, h5 a, h6 a, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6
 a:hover p:not(#apply-now-ribbon) {
   @apply font-utcbody;
 }
-.field--name-body a {
-  color: #166484;
+.UTCtextblock__links a:not(.btn), .utc-card-2__text a, .utc-sidebar-card__text a {
   position: relative;
-	font-weight:400;
+  font-weight:400;
+  white-space: nowrap;
 }
-.field--name-body a:after {
+.UTCtextblock__links a:not(.btn)::after, .utc-card-2__text a:after, .utc-sidebar-card__text a:after {
   content: '';
   height: 1px;
   background: #116484;
+  color:#116484;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -356,10 +357,10 @@ a:hover p:not(#apply-now-ribbon) {
   animation-name: bordershrink;
   animation-iteration-count: 1;
 }
-.field--name-body a:hover {
+.UTCtextblock__links a:not(.btn):hover, .utc-card-2__text a:hover, .utc-sidebar-card__text a:hover {
   color: #112e51;
 }
-.field--name-body a:hover:after {
+.UTCtextblock__links a:not(.btn):hover::after, .utc-card-2__text a:hover:after, .utc-sidebar-card__text a:hover:after {
   width: 15%;
   animation-duration: .25s;
   animation-name: bordergrow;
