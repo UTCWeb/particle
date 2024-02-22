@@ -287,7 +287,7 @@ ul.link-list li {
     margin-bottom: 18px;
     line-height:1.25;
 }
-ul.centered-list li {
+/*ul.centered-list li {
   list-style: none;
   margin-top: 18px;
   margin-bottom: 18px;
@@ -303,7 +303,7 @@ ul.centered-list li:after {
   content: "—";
   margin-left:6px;
   font-weight:300;
-}
+}*/
 /**end new special lists**/
 /**new special effects links**/
 .UTCtextblock__links a:not(.btn),
