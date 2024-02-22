@@ -297,10 +297,12 @@ ul.centered-list li {
 ul.centered-list li:before {
   content: "—";
   margin-right:6px;
+  font-weight:300;
 }
-ul.centered-list li:before {
+ul.centered-list li:after {
   content: "—";
   margin-left:6px;
+  font-weight:300;
 }
 /**end new special lists**/
 /**new special effects links**/
