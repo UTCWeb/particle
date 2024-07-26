@@ -17,15 +17,9 @@
         "prototyping"
     ],
     "scripts": {
-        "start": "npm run dev:pl",
-        "pl": "node ./apps/pl-default/pl-app.js",
-        "setup": "patternlab install --config ./apps/pl-default/patternlab-config.json && patternlab build --config ./apps/pl-default/patternlab-config.json",
-        "export:pl": "patternlab export --config ./apps/pl-default/patternlab-config.json",
-        "dev:pl": "cross-env-shell NODE_ENV=development \"npm run pl & webpack-dev-server --config ./apps/pl-default/webpack.config.js --hot\"",
-        "build:pl": "cross-env-shell NODE_ENV=production \"npm run pl && webpack --config ./apps/pl-default/webpack.config.js\"",
         "dev:drupal": "cross-env-shell NODE_ENV=development \"webpack --watch --config ./apps/drupal-default/webpack.config.js\"",
-        "build:drupal": "cross-env-shell NODE_ENV=production \"webpack --hide-modules --config ./apps/drupal-default/webpack.config.js\"",
-        "lint:js": "eslint --ext .js,.vue ./",
+        "build:drupal": "cross-env-shell NODE_ENV=production   \"webpack --hide-modules --config ./apps/drupal-default/webpack.config.js\"",
+        "lint:js": "eslint --ext .js ./",
         "lint:css": "stylelint '**/*.css'",
         "lint": "npm run lint:js; npm run lint:css;",
         "fmt:js": "npm run lint:js -- --fix",
@@ -39,14 +33,12 @@
         "test:unit": "npm run test:unit:default",
         "test:tools:generators": "NODE_ENV=test jest --projects tools/generators/",
         "test": "npm run test:unit",
-        "ci": "npm run lint && npm run test && npm run build:pl && npm run build:drupal",
-        "new": "yo new-component",
-        "postinstall": "cd tools/generators/new-component && npm link"
+        "ci": "npm run lint && npm run test && npm run build:drupal"
     },
     "dependencies": {
         "@fortawesome/fontawesome-svg-core": "^1.2.30",
         "@fortawesome/free-solid-svg-icons": "^5.14.0",
-        "core-js": "^3.6.5",
+        "core-js": "^3.37.1",
         "enquire": "^0.0.2",
         "holderjs": "^2.9.7",
         "jquery": "^3.5.1",
@@ -61,10 +53,6 @@
     "devDependencies": {
         "@babel/core": "^7.10.5",
         "@babel/preset-env": "^7.10.4",
-        "@pattern-lab/cli": "^5.11.1",
-        "@pattern-lab/core": "^5.11.1",
-        "@pattern-lab/engine-twig-php": "^5.11.1",
-        "@pattern-lab/uikit-workshop": "^5.11.1",
         "@tailwindcss/forms": "^0.2.1",
         "babel-core": "^7.0.0-bridge.0",
         "babel-jest": "^26.1.0",
@@ -80,12 +68,10 @@
         "eslint-plugin-import": "^2.22.0",
         "eslint-plugin-jest": "^23.18.0",
         "eslint-plugin-prettier": "^3.1.4",
-        "eslint-plugin-vue": "^6.2.2",
         "file-loader": "^6.0.0",
         "fs-extra": "^9.0.1",
         "jest": "^26.1.0",
         "jest-fetch-mock": "^3.0.3",
-        "jest-vue-preprocessor": "^1.7.1",
         "jsondiffpatch": "^0.4.1",
         "mini-css-extract-plugin": "^0.9.0",
         "optimize-css-assets-webpack-plugin": "^5.0.3",
@@ -108,14 +94,9 @@
         "svgo": "^1.3.2",
         "terser-webpack-plugin": "^3.0.7",
         "url-loader": "^4.1.0",
-        "vue-jest": "^3.0.6",
-        "vue-loader": "^15.9.3",
-        "vue-template-compiler": "^2.6.11",
-        "vue-testing-library": "^0.17.0",
         "webpack": "^4.43.0",
         "webpack-cli": "^3.3.12",
         "webpack-dev-server": "^3.11.0",
-        "webpack-merge": "^4.2.2",
-        "yo": "^3.1.1"
+        "webpack-merge": "^4.2.2"
     }
 }
