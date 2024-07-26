@@ -4,10 +4,10 @@
 core:
   css:
     theme:
-      ../../../dist/app-drupal/assets/app.styles.css:
+      ../../../dist/assets/app.styles.css:
         minified: true
   js:
-    ../../../dist/app-drupal/assets/app.js:
+    ../../../dist/assets/app.js:
       preprocess: false
   # See all in Drupal's `core/core.libraries.yml`
   dependencies:
@@ -18,43 +18,6 @@ core:
 # See `libraries-override` in particle.info.yml
 jquery:
   js:
-    ../../../dist/app-drupal/assets/drupal-jquery.js:
+    ../../../dist/assets/drupal-jquery.js:
       preprocess: false
       weight: -20
-
-#google-fonts: Font imports ARE FOUND IN THE tailwind.tokens.css file.
-#  css:
-#    base:
-#      https://fonts.googleapis.com/css?family=Oswald:wght@200;300;400;500;600;700&family=Raleway:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap: { type: external }
-
-
-#FILE IN app-drupal/assets DOES NOT EXIST. THIS FILE IS CALLED BY THE UTCADMIN MODULEE
-#ckeditor-jquery:
-#  js:
-#    ../../../dist/app-drupal/assets/ckeditor-jquery.js:
-#  dependencies:
-#    - particle/jquery
-#    - particle/jquery.ui.dialog
-#    - core/jquery
-
-# utc-lib-chatbutton:
-#   version: VERSION
-#   js:
-#     ../../../dist/app-drupal/assets/legacy/js/utc-lib-chatbutton.js: {}
-#   dependencies:
-#     - core/jquery
-
-# utc-lib-primosearch:
-#   version: VERSION
-#   js:
-#     ../../../dist/app-drupal/assets/legacy/js/utc-lib-primosearch.js: {}
-#   dependencies:
-#     - core/jquery
-
-# slick-custom-arrows:
-#   version: VERSION
-#   js:
-#     ../../../dist/app-drupal/assets/legacy/js/slick-custom-arrows.js: {}
-#   dependencies:
-#     - core/jquery
-#     - core/jquery.once

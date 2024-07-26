@@ -28,4 +28,4 @@ regions:
 components:
   namespaces:
     protons: []
-    atoms: ../../../dist/app-drupal/assets/atomic/_patterns/01-atoms
+    atoms: ../../../dist/assets/atomic/_patterns/01-atoms
