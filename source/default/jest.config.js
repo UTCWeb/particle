@@ -14,11 +14,7 @@ const dsPath = path.relative(path.join(__dirname, rootDir), __dirname);
  *   rootDir: '../../',
  *   moduleNameMapper: {
  *     '^protons[/]?(.*)': '<rootDir>/source/default/_patterns/00-protons/$1',
- *     '^atoms[/]?(.*)': '<rootDir>/source/default/_patterns/01-atoms/$1',
- *     '^molecules[/]?(.*)': '<rootDir>/source/default/_patterns/02-molecules/$1',
- *     '^organisms[/]?(.*)': '<rootDir>/source/default/_patterns/03-organisms/$1',
- *     '^templates[/]?(.*)': '<rootDir>/source/default/_patterns/04-templates/$1',
- *     '^pages[/]?(.*)': '<rootDir>/source/default/_patterns/05-pages/$1',
+ *     '^atoms[/]?(.*)': '<rootDir>/source/default/_patterns/01-atoms/$1'
  *   },
  *
  *   @TODO: Use Object.entries() when dropping support for Node 6
