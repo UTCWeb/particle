@@ -1,3 +1,8 @@
+os: linux
+version: ~> 1.0
+language: php
+dist: focal
+
 language: php
 php:
   - 8.1
@@ -5,9 +10,9 @@ matrix:
   fast_finish: true
 before_install:
   # Install node 16, npm 8
-  - nvm install v16.20.2
-  - nvm use v16.20.2
-  - npm install -g npm@8.19.4
+  - nvm install v18.20.4
+  - nvm use v18.20.4
+  #- npm install -g npm@10.7.0
 install:
   - npm install
 cache:
