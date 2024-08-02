@@ -64,6 +64,4 @@ function particle_preprocess(&$variables, $hook) {
     }
   }
 
-
-
 }

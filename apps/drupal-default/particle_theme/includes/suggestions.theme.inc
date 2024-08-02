@@ -55,7 +55,6 @@ function particle_theme_suggestions_fieldset_alter(array &$suggestions, array $v
  * Implements hook_theme_suggestions_HOOK_alter().
  *
  * @TODO evaluate for Search.
- *
  */
 function particle_theme_suggestions_form_alter(array &$suggestions, array $variables) {
   $id = $variables['element']['#id'];
