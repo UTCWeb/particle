@@ -2,14 +2,10 @@
 
 /**
  * @file
+ * Functions to support theming blocks in the Particle theme.
  */
 
 use Drupal\node\NodeInterface;
-
-/**
- * @file
- * Functions to support theming blocks in the Particle theme.
- */
 
 /**
  * Implements hook_theme_suggestions_block_alter().
@@ -40,26 +36,26 @@ function particle_theme_suggestions_block_alter(&$suggestions, $variables) {
     $suggestions[] = ('block__' . str_replace('-', '_', ltrim((string) $node_url_string, '/')) . "_id_" . $nid . "_label_" . preg_replace('/\s+/', '_', $variables['elements']['#configuration']['label']));
   }
 
-    $node = \Drupal::routeMatch()->getParameter('node');
-    $nid = null;
-    $node_url_string = null;
-    $node_bundle = null;
-    if ($node) {
-        if ($node instanceof NodeInterface) {
-            $nid = $node->id();
-            $node_bundle = $node->bundle();
-        }
-        if ($node instanceof NodeInterface) {
-            $node_url_string = $node->toUrl()->toString();
-        }
-    } 
-    $word= 'node';
-    /*
-    if (strpos((string) $node_url_string, $word) !== false) {
-        $suggestions[] = ('block__' . "_id_" . $nid . "_label_" . preg_replace('/\s+/', '_', $variables['elements']['#configuration']['label']));
-    } else {
-        $suggestions[] = ('block__'. str_replace('-', '_', ltrim((string) $node_url_string, '/')) . "_id_" . $nid . "_label_" . preg_replace('/\s+/', '_', $variables['elements']['#configuration']['label']));
-    }*/
+  $node = \Drupal::routeMatch()->getParameter('node');
+  $nid = NULL;
+  $node_url_string = NULL;
+  $node_bundle = NULL;
+  if ($node) {
+    if ($node instanceof NodeInterface) {
+      $nid = $node->id();
+      $node_bundle = $node->bundle();
+    }
+    if ($node instanceof NodeInterface) {
+      $node_url_string = $node->toUrl()->toString();
+    }
+  }
+  $word = 'node';
+  /*
+  if (strpos((string) $node_url_string, $word) !== false) {
+  $suggestions[] = ('block__' . "_id_" . $nid . "_label_" . preg_replace('/\s+/', '_', $variables['elements']['#configuration']['label']));
+  } else {
+  $suggestions[] = ('block__'. str_replace('-', '_', ltrim((string) $node_url_string, '/')) . "_id_" . $nid . "_label_" . preg_replace('/\s+/', '_', $variables['elements']['#configuration']['label']));
+  }*/
   if ($variables['elements']['#base_plugin_id'] == 'system_breadcrumb_block') {
     $suggestions[] = 'block__' . $variables['elements']['#base_plugin_id'] . "_" . $node_bundle;
   }
@@ -80,7 +76,7 @@ function particle_theme_suggestions_block_alter(&$suggestions, $variables) {
 function particle_preprocess_block(&$variables) {
   if ($variables['plugin_id'] == 'entity_browser_block:department_info') {
     $content = $variables['elements']['content'];
-    for ($index = 0; $index <= sizeof($content) - 1; $index++) {
+    for ($index = 0; $index <= count($content) - 1; $index++) {
       $variables['blocktitle'][$index] = $content[$index]['#block_content']->info->value;
       $variables['field_utc_department_building'][$index] = $content[$index]['#block_content']->get('field_utc_department_building')->view('url');
       $variables['field_utc_department_street_addr'][$index] = $content[$index]['#block_content']->get('field_utc_department_street_addr')->view('url');

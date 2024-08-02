@@ -6,7 +6,7 @@
  */
 
 /**
- *
+ * Implements hook_preprocess().
  */
 function particle_preprocess(&$variables, $hook) {
 

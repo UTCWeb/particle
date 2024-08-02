@@ -10,8 +10,6 @@ use Drupal\Component\Utility\Html;
 /**
  * Implements template_preprocess_hook().
  */
-$AggregatorArrayg = NULL;
-
 function particle_preprocess_aggregator_item(&$variables, $hook) {
   // Don't go looking for a manage display tab, there is none as
   // aggregator_items are not being exposed to the field UI
@@ -25,7 +23,7 @@ function particle_preprocess_aggregator_item(&$variables, $hook) {
  */
 function particle_preprocess_aggregator_feed(&$variables) {
   // sorts based on the key of its elements
-  // $AggregatorArray = $variables['content']['items'];
+  // $aggregatorArray = $variables['content']['items'];
   if ($variables['elements']['#view_mode'] === "utc_summary") {
     ksort($variables['content']['items']);
   }
