@@ -6,7 +6,7 @@
  */
 
 /**
- * add body class to error pages for background change.
+ * Add body class to error pages for background change.
  */
 function particle_preprocess_html(&$variables) {
   $statusCode = Drupal::request()->query->get('_exception_statuscode');
