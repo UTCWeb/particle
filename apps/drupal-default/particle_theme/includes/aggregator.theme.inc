@@ -2,6 +2,7 @@
 
 /**
  * @file
+ * Aggregator hooks in theme.
  */
 
 use Drupal\node\NodeInterface;
