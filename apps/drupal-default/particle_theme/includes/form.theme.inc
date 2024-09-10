@@ -9,6 +9,9 @@ declare(strict_types = 1);
 
 use Drupal\Core\Form\FormStateInterface;
 
+/**
+ * Implements hook_form_layout_builder_add_block_alter().
+ */
 function particle_form_layout_builder_add_block_alter(array &$form, FormStateInterface $form_state): void {
   // Make the block title a hidden element and generate a UUID for the block
   // title if one is not already provided.

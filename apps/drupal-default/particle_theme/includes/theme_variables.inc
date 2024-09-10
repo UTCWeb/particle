@@ -2,6 +2,7 @@
 
 /**
  * @file
+ * Hooks related to general theming.
  */
 
 /**

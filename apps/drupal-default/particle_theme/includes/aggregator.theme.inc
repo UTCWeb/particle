@@ -2,6 +2,7 @@
 
 /**
  * @file
+ * Hooks related to Aggregator funtionality.
  */
 
 use Drupal\node\NodeInterface;
@@ -12,7 +13,7 @@ use Drupal\Component\Utility\Html;
  */
 function particle_preprocess_aggregator_item(&$variables, $hook) {
   // Don't go looking for a manage display tab, there is none as
-  // aggregator_items are not being exposed to the field UI
+  // aggregator_items are not being exposed to the field UI.
   $timeStamp = $variables['elements']['#aggregator_item']->get('timestamp')->value;
   $variables['feed'] = $variables['elements']['#aggregator_item']->get('fid')->entity->title->value;
   $variables['adapted_time'] = date('M-d', $timeStamp);
@@ -22,8 +23,8 @@ function particle_preprocess_aggregator_item(&$variables, $hook) {
  * Implements template_preprocess_hook().
  */
 function particle_preprocess_aggregator_feed(&$variables) {
-  // sorts based on the key of its elements
-  // $AggregatorArray = $variables['content']['items'];
+  // Sorts based on the key of its elements
+  // $AggregatorArray = $variables['content']['items'];.
   if ($variables['elements']['#view_mode'] === "utc_summary") {
     ksort($variables['content']['items']);
   }
